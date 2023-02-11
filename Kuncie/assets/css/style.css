@@ -33,6 +33,14 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+/*Rounded Corner*/
+
+.rounded {
+  border-radius: 35px;
+}
+
+/*End of Rounded Corner*/
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
