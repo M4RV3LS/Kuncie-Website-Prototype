@@ -1505,12 +1505,12 @@ section {
 #footer {
   color: #37423b;
   font-size: 14px;
-  background: #eef0ef;
+  background: white;
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #f9faf9;
+  background: #2c1a32;
 }
 
 #footer .footer-top .footer-contact {
@@ -1530,7 +1530,7 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
-  color: #777777;
+  color: white;
 }
 
 #footer .footer-top h4 {
