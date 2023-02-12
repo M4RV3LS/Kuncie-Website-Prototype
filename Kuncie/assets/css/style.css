@@ -784,7 +784,6 @@ section {
   align-items: center;
   padding: 20px;
   transition: 0.3s;
-  border: 1px solid #eef0ef;
 }
 
 .features .icon-box i {
@@ -807,11 +806,11 @@ section {
 }
 
 .features .icon-box:hover {
-  border-color: #f4c474;
+  cursor: grab;
 }
 
 .features .icon-box:hover h3 a {
-  color: #f4c474;
+  cursor: grab;
 }
 
 /*--------------------------------------------------------------
