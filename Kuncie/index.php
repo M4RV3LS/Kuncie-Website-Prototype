@@ -1,3 +1,11 @@
+<?php
+  session_start();
+  $conn = mysqli_connect("localhost","root","","marketeers");
+  $email = $_SESSION['email'];
+  $username = mysqli_query($conn,"SELECT username FROM user WHERE email = '$email'");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
