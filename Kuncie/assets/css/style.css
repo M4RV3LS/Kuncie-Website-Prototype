@@ -353,6 +353,12 @@ h6 {
   .navbar a:focus {
     justify-content: flex-start;
   }
+
+  #welcome {
+    display: none;
+  }
+
+ 
 }
 
 .navbar-mobile {
