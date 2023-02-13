@@ -174,13 +174,13 @@ h6 {
 */
 .get-started-btn {
   margin-left: 22px;
-  background: #f4c474;
+  /* background: #f4c474;
   color: #fff;
-  border-radius: 50px;
+  border-radius: 50px; */
   padding: 8px 25px;
   white-space: nowrap;
   transition: 0.3s;
-  font-size: 14px;
+  font-size: 40px;
   display: inline-block;
 }
 
