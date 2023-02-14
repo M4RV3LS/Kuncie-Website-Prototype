@@ -174,9 +174,9 @@ h6 {
 */
 .get-started-btn {
   margin-left: 22px;
-  /* background: #f4c474;
+  background: #f4c474;
   color: #fff;
-  border-radius: 50px; */
+  border-radius: 50px;
   padding: 8px 25px;
   white-space: nowrap;
   transition: 0.3s;
@@ -357,8 +357,6 @@ h6 {
   #welcome {
     display: none;
   }
-
- 
 }
 
 .navbar-mobile {
@@ -888,6 +886,10 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Recommendation
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
 # Trainers
 --------------------------------------------------------------*/
 .trainers .member {
@@ -1302,7 +1304,7 @@ section {
 
 .pricing ul .na {
   color: #ccc;
-  text-decoration: line-through;
+  text-decoration: none;
 }
 
 .pricing .btn-wrap {
