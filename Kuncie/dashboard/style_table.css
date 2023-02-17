@@ -1,0 +1,29 @@
+table {
+    border-collapse: collapse;
+    width: 95%;
+    background-color: white;
+    color: rgb(8, 43, 61);
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+}
+
+tr {
+    font-size: 13px;
+}
+
+tr td {
+    width: 6000px;
+}
+
+tr:nth-child(even) {
+    background-color: #D6EEEE;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-title {
+    text-align: center;
+    font-size: 25px;
+}
