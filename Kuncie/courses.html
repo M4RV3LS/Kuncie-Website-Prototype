@@ -46,7 +46,7 @@
         <!-- Uncomment below if you prefer to use an image logo -->
         <div>
           <div class="d-flex">
-            <div class="align-self-center elumine-site-logo">
+            <div class="align-self-center elumine-site-logo col-8 offset-2">
               <a href="index.html" class="logo me-auto"><img src="assets/img/kuncie_logo.png" alt="Responsive image" class="img-fluid" /></a>
             </div>
           </div>
@@ -56,9 +56,10 @@
           <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
               <li>
-                <a class="active" href="index.html"><i class="bi bi-house-fill" style="font-size: 1em; padding: 5px"></i> Beranda</a>
+                <a id="beranda" class="active" href="index.html"><i class="bi bi-house-fill" style="font-size: 1em; padding: 5px"></i> Beranda</a>
               </li>
-              <!-- <li><a href="about.html">Kategori</a></li> -->
+
+              <!-- Mulai Kategori -->
               <li class="dropdown">
                 <a href="#"
                   ><span><i class="bi bi-tags-fill" style="font-size: 1em; padding: 5px"></i>Kategori</span> <i class="bi bi-chevron-down"></i
@@ -289,89 +290,77 @@
                 <a href="trainers.html"><i class="bi bi-person-fill" style="font-size: 1em; padding: 5px"></i>Mentor</a>
               </li>
 
+              <!-- Mulai Produk -->
               <li class="dropdown">
                 <a href="#"
-                  ><span><i class="bi bi-laptop" style="font-size: 1em; padding: 5px"></i>Mini MBA</span> <i class="bi bi-chevron-down"></i
+                  ><span><i class="bi bi-bag-check-fill" style="font-size: 1em; padding: 5px"></i>Produk</span> <i class="bi bi-chevron-down"></i
                 ></a>
                 <ul>
-                  <li><a href="#">Mini MBA SBM ITB</a></li>
-                  <!-- <li class="dropdown">
-                <a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li> -->
-                  <li><a href="#">Mini MBA Political Marketing</a></li>
+                  <!-- Mini MBA -->
+                  <li class="dropdown">
+                    <a href=""><span>Mini MBA</span><i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="courses.html">Mini MBA SBM ITB</a></li>
+                      <li><a href="courses.html">Mini MBA Political Marketing</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- Bootcamp -->
+                  <li class="dropdown">
+                    <a href="#"><span>Bootcamp</span><i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="courses.html">Komplit Data Analytics</a></li>
+                      <li><a href="courses.html">Komplit Barista Kopi</a></li>
+                      <li><a href="courses.html">Komplit Perpajakan</a></li>
+                      <li><a href="courses.html">Komplit Product Management</a></li>
+                      <li><a href="courses.html">Komplit Quality Assurance</a></li>
+                      <li><a href="courses.html">Komplit Graphic Design</a></li>
+                      <li><a href="courses.html">Komplit Career Preparation</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- Kelas -->
+                  <li class="dropdown">
+                    <a href="#"><span>Kelas</span><i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="courses.html">Kelas Jago</a></li>
+                      <li><a href="courses.html">Promo Paket Kelas Istimewa</a></li>
+                      <li><a href="courses.html">Microsoft Certification Program</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- WEBINAR -->
+                  <li>
+                    <a href="events.html">Webinar</a>
+                  </li>
+
+                  <!-- Kelas Bersama -->
+                  <li>
+                    <a href="pricing.html">Kelas Bersama</a>
+                  </li>
                 </ul>
               </li>
-
-              <li class="dropdown">
-                <a href="#"
-                  ><span><i class="bi bi-graph-up-arrow" style="font-size: 1em; padding: 5px"></i>Bootcamp</span> <i class="bi bi-chevron-down"></i
-                ></a>
-                <ul>
-                  <li><a href="#">Komplit Data Analytics</a></li>
-                  <!-- <li class="dropdown">
-                <a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li> -->
-                  <li><a href="#">Komplit Barista Kopi</a></li>
-                  <li><a href="#">Komplit Perpajakan</a></li>
-                  <li><a href="#">Komplit Product Management</a></li>
-                  <li><a href="#">Komplit Quality Assurance</a></li>
-                  <li><a href="#">Komplit Graphic Design</a></li>
-                  <li><a href="#">Komplit Career Preparation</a></li>
-                </ul>
-              </li>
-
-              <li class="dropdown">
-                <a href="#"
-                  ><span><i class="bi bi-mortarboard-fill" style="font-size: 1em; padding: 5px"></i>Kelas</span> <i class="bi bi-chevron-down"></i
-                ></a>
-                <ul>
-                  <li><a href="course.html">Kelas Jago</a></li>
-                  <li><a href="course.html">Promo Paket Kelas Istimewa</a></li>
-                  <li><a href="course.html">Microsoft Certification Program</a></li>
-                </ul>
+              <!-- Challenge -->
+              <li>
+                <a href="events.html"><i class="bi bi-rocket-fill" style="font-size: 1em; padding: 5px"></i>Challenge</a>
               </li>
 
               <li>
-                <a href="events.html"><i class="bi bi-pc-display-horizontal" style="font-size: 1em; padding: 5px"></i>Webinar</a>
-              </li>
-              <li>
-                <a href="contact.html"><i class="bi bi-cart3" style="font-size: 20px; padding: 5px"></i></a>
+                <a href="kuncie_store.html"><i class="bi bi-cart-check-fill" style="font-size: 1em; padding: 5px"></i>Kuncie Store</a>
               </li>
             </ul>
+
             <i class="bi bi-list mobile-nav-toggle"></i>
           </nav>
         </div>
         <!-- .navbar -->
 
-        <a href="courses.html" class="get-started-btn">Masuk</a>
+        <a href="courses.html" class="get-started-btn" style="border-radius: 40px; font-size: 20px">Masuk</a>
       </div>
     </header>
     <!-- End Header -->
 
     <main id="main" data-aos="fade-in">
-      <!-- ======= Breadcrumbs ======= -->
-      <div class="breadcrumbs">
-        <div class="container">
-          <h2>Courses</h2>
-          <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium.</p>
-        </div>
-      </div>
-      <!-- End Breadcrumbs -->
-
       <!-- ======= Courses Section ======= -->
       <section id="popular-courses" class="courses">
         <div class="container" data-aos="fade-up">
@@ -381,8 +370,16 @@
           </div>
 
           <!-- Search Bar -->
-          <input type="text" class="form-control  mb-3 mx-auto" id="myinput" placeholder="Live searching...." style="width: 50%" />
+          <input type="text" class="form-control mb-3 mx-auto" id="myinput" placeholder="Live searching...." style="width: 50%" />
           <!-- End Search Bar -->
+          <!-- ======= Breadcrumbs ======= -->
+          <div class="breadcrumbs">
+            <div class="container">
+              <h2>Courses</h2>
+              <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium.</p>
+            </div>
+          </div>
+          <!-- End Breadcrumbs -->
           <div class="container mb-5">
             <h3 class="text-danger mt-5 text-center" id="para" style="display: none">Not Found</h3>
 
