@@ -4,6 +4,36 @@ require '../../function.php';
 $email = $_SESSION['email'];
 //echo $email;
 
+$sql2 = "SELECT * FROM user WHERE email = '$email'";
+$row2 = mysqli_fetch_assoc(mysqli_query($conn, $sql2));
+if ($row2['username'] != NULL)
+{
+  $uname = $row2['username'];
+}
+if ($row2['firstname'] != NULL)
+{
+  $fname = $row2['firstname'];
+}
+if ($row2['lastname'] != NULL)
+{
+  $lname = $row2['lastname'];
+}
+if ($row2['organizationname'] != NULL)
+{
+  $oname = $row2['organizationname'];
+}
+if ($row2['loc'] != NULL)
+{
+  $loc = $row2['loc'];
+}
+if ($row2['phonenumber'] != NULL)
+{
+  $phonenum = $row2['phonenumber'];
+}
+if ($row2['birthday'] != NULL)
+{
+  $bday = $row2['birthday'];
+}
 if ( isset($_POST['savechanges']))
 {
 
@@ -15,19 +45,18 @@ if ( isset($_POST['savechanges']))
     $phone = $_POST['phone'];
     $birthday = $_POST['birthday'];
     $sql = "UPDATE user SET username = '$username', firstname = '$firstname' , lastname = '$lastname' , organizationname = '$organizationname', loc = '$location', phonenumber = '$phone' , birthday = '$birthday' WHERE email = '$email'";
-    mysqli_query($conn, $sql);
-    header( "refresh:1;url= profile.php" );
-		echo "
+    $result = mysqli_query($conn, $sql);
+    //header( "refresh:3;url= profile.php" );
+    header("refresh:0");
+    //header("Location = profile.php");		
+    echo "
 			<script>
 			alert('Profile berhasil di update!');
 			</script>;
 		";
+}
+//session_destroy();
 
-}
-else
-{
-  echo "Gak masuk";
-}
 ?>
 
 <head>
@@ -134,19 +163,19 @@ else
               <!-- Form Group (username)-->
               <div class="mb-3">
                 <label class="small mb-1" for="inputUsername">Username (how your name will appear to other users on the site)</label>
-                <input class="form-control" id="inputUsername" type="text" placeholder="Enter your username" value="username" name = "username"/>
+                <input class="form-control" id="inputUsername" type="text" placeholder="ex : John Doe" value="<?php echo (isset($uname)) ? $uname: ''?>" name = "username"/>
               </div>
               <!-- Form Row-->
               <div class="row gx-3 mb-3">
                 <!-- Form Group (first name)-->
                 <div class="col-md-6">
                   <label class="small mb-1" for="inputFirstName">First name</label>
-                  <input class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" value="Valerie" name = "firstname" />
+                  <input class="form-control" id="inputFirstName" type="text" placeholder="ex : John" value="<?php echo (isset($fname)) ? $fname: ''?>" name = "firstname" />
                 </div>
                 <!-- Form Group (last name)-->
                 <div class="col-md-6">
                   <label class="small mb-1" for="inputLastName">Last name</label>
-                  <input class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" value="Luna" name = "lastname" />
+                  <input class="form-control" id="inputLastName" type="text" placeholder="ex : Doe" value="<?php echo (isset($lname)) ? $lname: ''?>" name = "lastname" />
                 </div>
               </div>
               <!-- Form Row        -->
@@ -154,35 +183,35 @@ else
                 <!-- Form Group (organization name)-->
                 <div class="col-md-6">
                   <label class="small mb-1" for="inputOrgName">Organization name</label>
-                  <input class="form-control" id="inputOrgName" type="text" placeholder="Enter your organization name" value="Start Bootstrap" name = "organizationname"/>
+                  <input class="form-control" id="inputOrgName" type="text" placeholder="ex : ITB" value="<?php echo (isset($oname)) ? $oname: ''?>" name = "organizationname"/>
                 </div>
                 <!-- Form Group (location)-->
                 <div class="col-md-6">
                   <label class="small mb-1" for="inputLocation">Location</label>
                   <!-- $location = $data['location']; -->
-                  <input class="form-control" id="inputLocation" type="text" placeholder="Enter your location" value="San Francisco, CA" name = "location" />
+                  <input class="form-control" id="inputLocation" type="text" placeholder="ex : Jl. Ganesha 10" value="<?php echo (isset($loc)) ? $loc: ''?>" name = "location" />
                 </div>
               </div>
               <!-- Form Group (email address)-->
               <div class="mb-3">
                 <label class="small mb-1" for="inputEmailAddress">Email address</label>
-                <input class="form-control" id="inputEmailAddress" type="email" name = "email" placeholder="Enter your email address" value="name@example.com" name = "emailaddress"/>
+                <input class="form-control" id="inputEmailAddress" type="email" name = "email" placeholder="Enter your email address" value="<?php echo (isset($email)) ? $email: ''?>" name = "emailaddress"/>
               </div>
               <!-- Form Row-->
               <div class="row gx-3 mb-3">
                 <!-- Form Group (phone number)-->
                 <div class="col-md-6">
                   <label class="small mb-1" for="inputPhone">Phone number</label>
-                  <input class="form-control" id="inputPhone" type="tel" placeholder="Enter your phone number" value="555-123-4567" name = "phone" />
+                  <input class="form-control" id="inputPhone" type="tel" placeholder="ex : 081924457364" value="<?php echo (isset($phonenum)) ? $phonenum: ''?>" name = "phone" />
                 </div>
                 <!-- Form Group (birthday)-->
                 <div class="col-md-6">
                   <label class="small mb-1" for="inputBirthday">Birthday</label>
-                  <input class="form-control" id="inputBirthday" type="text" name="birthday" placeholder="Enter your birthday" value="06/10/1988"  name = "birthday"/>
+                  <input class="form-control" id="inputBirthday" type="text" name="birthday" placeholder="ex : 16/02/2004" value="<?php echo (isset($birthday)) ? $birthday: ''?>"  name = "birthday"/>
                 </div>
               </div>
               <!-- Save changes button-->
-              <button class="btn btn-primary" type="submit" name ="savechanges">Save changes</button>
+              <button class="btn btn-primary" type="submit" name ="savechanges" href="#">Save changes</button>
             </form>
           </div>
         </div>
