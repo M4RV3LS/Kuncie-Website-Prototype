@@ -132,14 +132,15 @@ if ( isset($_POST['savechanges']))
   </style>
 </head>
 <body>
+  <form action = "" method = "POST">
   <div class="container-xl px-4 mt-4">
     <!-- Account page navigation-->
     <!-- target="__blank" -->
     <nav class="nav nav-borders">
+      <a class="nav-link" href="index - login.php">Home</a>
       <a class="nav-link active ms-0" href="profile.html">Profile</a>
       <a class="nav-link" href="myclass.php">My Class</a>
-      <!-- <a class="nav-link" href="https://www.bootdey.com/snippets/view/bs5-profile-security-page">Security</a>
-      <a class="nav-link" href="https://www.bootdey.com/snippets/view/bs5-edit-notifications-page">Notifications</a> -->
+      <!-- <!-- <a class="nav-link" href="https://www.bootdey.com/snippets/view/bs5-profile-security-page">Security</a> -->
     </nav>
     <hr class="mt-0 mb-4" />
     <div class="row">

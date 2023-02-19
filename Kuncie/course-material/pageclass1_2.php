@@ -16,7 +16,8 @@ if($state['progress'] == 0)
 
 elseif($state['progress'] == 25)
 {
-  $update = mysqli_query($conn, "UPDATE user_class SET progress = progress + 25 WHERE email = '$email' and class = 'Word01'"); 
+  $update = mysqli_query($conn, "UPDATE user_class SET progress = progress + 25 WHERE email = '$email' and class = 'Word01'");
+  $page = mysqli_query($conn, "UPDATE user_class SET page = 'pageclass1_2' WHERE email = '$email' and class = 'Word01'");
 }
 $state2 = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user_class WHERE email = '$email' and class = 'Word01'"));
 ?>
@@ -78,7 +79,7 @@ $state2 = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user_class WHERE
         <nav id="navbar" class="nav-menu navbar">
           <ul>
             <li>
-              <a href="#" class="nav-link scrollto active"><i class="bi bi-caret-left-fill"></i> </a>
+              <a href="../myclass.php" class="nav-link scrollto active"><i class="bi bi-caret-left-fill"></i> </a>
             </li>
             <li>
               <a href="pageclass1_1.php" class="nav-link scrollto"><i class="bi bi-1-square-fill"></i> <span>Page 1</span></a>

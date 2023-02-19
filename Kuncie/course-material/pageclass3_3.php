@@ -13,14 +13,24 @@ if($state['progress'] == 0)
 			</script>;
 		";
 }
-
-elseif($state['progress'] == 25)
+else if($state['progress'] == 25)
 {
-  $update = mysqli_query($conn, "UPDATE user_class SET progress = progress + 25 WHERE email = '$email' and class = 'PowerPoint01'"); 
+  header("refresh:1;url = pageclass3_2.php");
+  echo "
+			<script>
+			alert('Anda belum menyelesaikan Modul Sebelumnya!');
+			</script>;
+		";
+
+}
+else if($state['progress'] == 50)
+{
+  $update = mysqli_query($conn, "UPDATE user_class SET progress = progress + 25 WHERE email = '$email' and class = 'PowerPoint01'");
+  $page = mysqli_query($conn, "UPDATE user_class SET page = 'pageclass3_3' WHERE email = '$email' and class = 'PowerPoint01'")
 }
 $state2 = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user_class WHERE email = '$email' and class = 'PowerPoint01'"));
-?>
 
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -56,7 +66,7 @@ $state2 = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user_class WHERE
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   </head>
-  <body>
+  <body>s
     <form action = "" method = "POST">
     <!-- ======= Mobile nav toggle button ======= -->
     <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
@@ -78,16 +88,16 @@ $state2 = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user_class WHERE
         <nav id="navbar" class="nav-menu navbar">
           <ul>
             <li>
-              <a href="#" class="nav-link scrollto active"><i class="bi bi-caret-left-fill"></i> </a>
+              <a href="../myclass.php" class="nav-link scrollto active"><i class="bi bi-caret-left-fill"></i> </a>
             </li>
             <li>
               <a href="pageclass3_1.php" class="nav-link scrollto"><i class="bi bi-1-square-fill"></i> <span>Page 1</span></a>
             </li>
             <li>
-              <a href="pageclass3_2.php" class="nav-link scrollto active"><i class="bi bi-2-square-fill"></i> <span>Page 2</span></a>
+              <a href="pageclass3_2.php" class="nav-link scrollto"><i class="bi bi-2-square-fill"></i> <span>Page 2</span></a>
             </li>
             <li>
-              <a href="pageclass3_3.php" class="nav-link scrollto"><i class="bi bi-3-square-fill"></i> <span>Page 3</span></a>
+              <a href="pageclass3_3.php" class="nav-link scrollto active"><i class="bi bi-3-square-fill"></i> <span>Page 3</span></a>
             </li>
             <li>
               <a href="pageclass3_4.php" class="nav-link scrollto"><i class="bi bi-4-square-fill"></i> <span>page 4</span></a>
@@ -113,8 +123,8 @@ $state2 = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user_class WHERE
     <footer id="footer">
       <div class="container">
         <div class="d-flex justify-content-between fixed-bottom align-items-center" style="background-color: #2c1a32; height: 80px">
-          <button class="btn ms-3" type="button" style="background-color: #f4c474" name ="previous"><a href ="pageclass3_1.php" style ="Color : White">previous</a></button>
-          <button class="btn me-3" type="button" style="background-color: #f4c474" name = "next"><a href ="pageclass3_3.php" style = "color : White">Next</a></button>
+          <button class="btn ms-3" type="button" style="background-color: #f4c474" name = "previous"><a href ="pageclass3_2.php" style = "color : White">Previous</button>
+          <button class="btn me-3" type="button" style="background-color: #f4c474" name = "next"><a href ="pageclass3_4.php" style = "color : White">Next</a></button>
         </div>
       </div>
     </footer>
