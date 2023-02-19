@@ -4,13 +4,15 @@ require '../../function.php';
 $email = $_SESSION['email'];
 $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = '$email'"));
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Events - Mentor Bootstrap Template</title>
+    <title>Courses - Mentor Bootstrap Template</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -32,6 +34,11 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- <link href="assets/css/_2.css" rel="stylesheet" /> -->
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+
+    <!-- Script -->
+    <!-- <script src="assets/js/kelas_jago.js"></script> -->
 
     <!-- =======================================================
   * Template Name: Mentor - v4.10.0
@@ -351,19 +358,6 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
               <li>
                 <a href="kuncie_store.html"><i class="bi bi-cart-check-fill" style="font-size: 1em; padding: 5px"></i>Kuncie Store</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle" />
-                </a>
-                <ul id="profile-dropdown" style = "left:-90px">
-                  <li><a href="profile.php">My Profile</a></li>
-                  <li><a href="../../login.php" name = "logout">Log Out</a></li>
-                </ul>
-              </li>
-
-              <li>
-                <a href="#" id="welcome">Hi , <?php echo $row['username']?> !</a>
-              </li>
             </ul>
 
             <i class="bi bi-list mobile-nav-toggle"></i>
@@ -371,56 +365,398 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
         </div>
         <!-- .navbar -->
 
+        <a href="courses.html" class="get-started-btn" style="border-radius: 40px; font-size: 20px">Masuk</a>
       </div>
     </header>
     <!-- End Header -->
 
-    <main id="main">
+    <main id="main" data-aos="fade-in">
       <!-- ======= Breadcrumbs ======= -->
-      <div class="breadcrumbs" data-aos="fade-in">
+      <div class="breadcrumbs">
         <div class="container">
-          <h2>Events</h2>
+          <h2>Courses</h2>
           <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium.</p>
         </div>
       </div>
       <!-- End Breadcrumbs -->
 
-      <!-- ======= Events Section ======= -->
-      <section id="events" class="events">
-        <div class="container" data-aos="fade-up">
-          <div class="row">
-            <div class="col-md-6 d-flex align-items-stretch">
-              <div class="card">
-                <div class="card-img">
-                  <img src="assets/img/events-1.jpg" alt="..." />
+      <!-- ======= Courses Section ======= -->
+      <!-- ======= Works Section ======= -->
+      <div class="main-container">
+        <h2>News Categories</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, velit.</p>
+        <div class="filter-container">
+          <div class="category-head">
+            <ul>
+              <div class="category-title active" id="all">
+                <li>All</li>
+                <span><i class="fas fa-border-all"></i></span>
+              </div>
+              <div class="category-title" id="culture">
+                <li>Culture</li>
+                <span><i class="fas fa-theater-masks"></i></span>
+              </div>
+              <div class="category-title" id="politics">
+                <li>Politics</li>
+                <span><i class="fas fa-landmark"></i></span>
+              </div>
+              <div class="category-title" id="finance">
+                <li>Finance</li>
+                <span><i class="fas fa-chart-area"></i></span>
+              </div>
+              <div class="category-title" id="business">
+                <li>Business</li>
+                <span><i class="fas fa-coins"></i></span>
+              </div>
+              <div class="category-title" id="sports">
+                <li>Sports</li>
+                <span><i class="fas fa-running"></i></span>
+              </div>
+            </ul>
+          </div>
+
+          <div class="posts-collect">
+            <div class="posts-main-container">
+              <!-- single post -->
+              <div class="all business">
+                <div class="post-img">
+                  <img src="assets/img/course-1.jpg" alt="post" />
+                  <span class="category-name">business</span>
                 </div>
-                <div class="card-body">
-                  <h5 class="card-title"><a href="">Introduction to webdesign</a></h5>
-                  <p class="fst-italic text-center">Sunday, September 26th at 7:00 pm</p>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+
+                <div class="post-content">
+                  <div class="post-content-top">
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
+                  </div>
+                  <h2>Lorem ipsum dolor sit amet</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
                   </p>
                 </div>
+                <button type="button" class="read-btn">Read All</button>
               </div>
-            </div>
-            <div class="col-md-6 d-flex align-items-stretch">
-              <div class="card">
-                <div class="card-img">
-                  <img src="assets/img/events-2.jpg" alt="..." />
+              <!-- end of single post -->
+              <!-- single post -->
+              <div class="all business">
+                <div class="post-img">
+                  <img src="assets/img/course-2.jpg" alt="post" />
+                  <span class="category-name">business</span>
                 </div>
-                <div class="card-body">
-                  <h5 class="card-title"><a href="">Marketing Strategies</a></h5>
-                  <p class="fst-italic text-center">Sunday, November 15th at 7:00 pm</p>
-                  <p class="card-text">
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
+
+                <div class="post-content">
+                  <div class="post-content-top">
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
+                  </div>
+                  <h2>Lorem ipsum dolor sit amet</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
                   </p>
                 </div>
+                <button type="button" class="read-btn">Read All</button>
               </div>
+              <!-- end of single post -->
+              <!-- single post -->
+              <div class="all business">
+                <div class="post-img">
+                  <img src="assets/img/course-3.jpg" alt="post" />
+                  <span class="category-name">business</span>
+                </div>
+
+                <div class="post-content">
+                  <div class="post-content-top">
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
+                  </div>
+                  <h2>Lorem ipsum dolor sit amet</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
+                  </p>
+                </div>
+                <button type="button" class="read-btn">Read All</button>
+              </div>
+              <!-- end of single post -->
+              <!-- single post -->
+              <div class="all culture">
+                <div class="post-img">
+                  <img src="assets/img/course-1.jpg" alt="post" />
+                  <span class="category-name">culture</span>
+                </div>
+
+                <div class="post-content">
+                  <div class="post-content-top">
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
+                  </div>
+                  <h2>Lorem ipsum dolor sit amet</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
+                  </p>
+                </div>
+                <button type="button" class="read-btn">Read All</button>
+              </div>
+              <!-- end of single post -->
+              <!-- single post -->
+              <div class="all culture">
+                <div class="post-img">
+                  <img src="assets/img/course-2.jpg" alt="post" />
+                  <span class="category-name">culture</span>
+                </div>
+
+                <div class="post-content">
+                  <div class="post-content-top">
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
+                  </div>
+                  <h2>Lorem ipsum dolor sit amet</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
+                  </p>
+                </div>
+                <button type="button" class="read-btn">Read All</button>
+              </div>
+              <!-- end of single post -->
+              <!-- single post -->
+              <div class="all culture">
+                <div class="post-img">
+                  <img src="assets/img/course-3.jpg" alt="post" />
+                  <span class="category-name">culture</span>
+                </div>
+
+                <div class="post-content">
+                  <div class="post-content-top">
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
+                  </div>
+                  <h2>Lorem ipsum dolor sit amet</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
+                  </p>
+                </div>
+                <button type="button" class="read-btn">Read All</button>
+              </div>
+              <!-- end of single post -->
+              <!-- single post -->
+              <div class="all culture">
+                <div class="post-img">
+                  <img src="assets/img/course-1.jpg" alt="post" />
+                  <span class="category-name">culture</span>
+                </div>
+
+                <div class="post-content">
+                  <div class="post-content-top">
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
+                  </div>
+                  <h2>Lorem ipsum dolor sit amet</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
+                  </p>
+                </div>
+                <button type="button" class="read-btn">Read All</button>
+              </div>
+              <!-- end of single post -->
+              <!-- single post -->
+              <div class="all finance">
+                <div class="post-img">
+                  <img src="assets/img/course-2.jpg" alt="post" />
+                  <span class="category-name">finance</span>
+                </div>
+
+                <div class="post-content">
+                  <div class="post-content-top">
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
+                  </div>
+                  <h2>Lorem ipsum dolor sit amet</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
+                  </p>
+                </div>
+                <button type="button" class="read-btn">Read All</button>
+              </div>
+              <!-- end of single post -->
+              <!-- single post -->
+              <div class="all finance">
+                <div class="post-img">
+                  <img src="assets/img/course-3.jpg" alt="post" />
+                  <span class="category-name">finance</span>
+                </div>
+
+                <div class="post-content">
+                  <div class="post-content-top">
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
+                  </div>
+                  <h2>Lorem ipsum dolor sit amet</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
+                  </p>
+                </div>
+                <button type="button" class="read-btn">Read All</button>
+              </div>
+              <!-- end of single post -->
+              <!-- single post -->
+              <div class="all finance">
+                <div class="post-img">
+                  <img src="assets/img/course-2.jpg" alt="post" />
+                  <span class="category-name">finance</span>
+                </div>
+
+                <div class="post-content">
+                  <div class="post-content-top">
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
+                  </div>
+                  <h2>Lorem ipsum dolor sit amet</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
+                  </p>
+                </div>
+                <button type="button" class="read-btn">Read All</button>
+              </div>
+              <!-- end of single post -->
+              <!-- single post -->
+              <div class="all politics">
+                <div class="post-img">
+                  <img src="assets/img/course-1.jpg" alt="post" />
+                  <span class="category-name">politics</span>
+                </div>
+
+                <div class="post-content">
+                  <div class="post-content-top">
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
+                  </div>
+                  <h2>Lorem ipsum dolor sit amet</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
+                  </p>
+                </div>
+                <button type="button" class="read-btn">Read All</button>
+              </div>
+              <!-- end of single post -->
+              <!-- single post -->
+              <div class="all politics">
+                <div class="post-img">
+                  <img src="assets/img/course-2.jpg" alt="post" />
+                  <span class="category-name">politics</span>
+                </div>
+
+                <div class="post-content">
+                  <div class="post-content-top">
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
+                  </div>
+                  <h2>Lorem ipsum dolor sit amet</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
+                  </p>
+                </div>
+                <button type="button" class="read-btn">Read All</button>
+              </div>
+              <!-- end of single post -->
+              <!-- single post -->
+              <div class="all politics">
+                <div class="post-img">
+                  <img src="assets/img/course-3.jpg" alt="post" />
+                  <span class="category-name">politics</span>
+                </div>
+
+                <div class="post-content">
+                  <div class="post-content-top">
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
+                  </div>
+                  <h2>Lorem ipsum dolor sit amet</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
+                  </p>
+                </div>
+                <button type="button" class="read-btn">Read All</button>
+              </div>
+              <!-- end of single post -->
+              <!-- single post -->
+              <div class="all politics">
+                <div class="post-img">
+                  <img src="assets/img/course-1.jpg" alt="post" />
+                  <span class="category-name">politics</span>
+                </div>
+
+                <div class="post-content">
+                  <div class="post-content-top">
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
+                  </div>
+                  <h2>Lorem ipsum dolor sit amet</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
+                  </p>
+                </div>
+                <button type="button" class="read-btn">Read All</button>
+              </div>
+              <!-- end of single post -->
+              <!-- single post -->
+              <div class="all sports">
+                <div class="post-img">
+                  <img src="assets/img/course-3.jpg" alt="post" />
+                  <span class="category-name">sports</span>
+                </div>
+
+                <div class="post-content">
+                  <div class="post-content-top">
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
+                  </div>
+                  <h2>Lorem ipsum dolor sit amet</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
+                  </p>
+                </div>
+                <button type="button" class="read-btn">Read All</button>
+              </div>
+              <!-- end of single post -->
+              <!-- single post -->
+              <div class="all sports">
+                <div class="post-img">
+                  <img src="assets/img/course-2.jpg" alt="post" />
+                  <span class="category-name">sports</span>
+                </div>
+
+                <div class="post-content">
+                  <div class="post-content-top">
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
+                  </div>
+                  <h2>Lorem ipsum dolor sit amet</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
+                  </p>
+                </div>
+                <button type="button" class="read-btn">Read All</button>
+              </div>
+              <!-- end of single post -->
             </div>
           </div>
         </div>
-      </section>
-      <!-- End Events Section -->
+      </div>
     </main>
     <!-- End #main -->
 
@@ -513,5 +849,6 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/main_3.js"></script>
   </body>
 </html>

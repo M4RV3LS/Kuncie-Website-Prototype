@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 require '../../function.php';
@@ -10,7 +11,7 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Events - Mentor Bootstrap Template</title>
+    <title>Trainers - Mentor Bootstrap Template</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -50,7 +51,7 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
         <div>
           <div class="d-flex">
             <div class="align-self-center elumine-site-logo col-8 offset-2">
-              <a href="index.html" class="logo me-auto"><img src="assets/img/kuncie_logo.png" alt="Responsive image" class="img-fluid" /></a>
+              <a href="index.php" class="logo me-auto"><img src="assets/img/kuncie_logo.png" alt="Responsive image" class="img-fluid" /></a>
             </div>
           </div>
         </div>
@@ -59,7 +60,7 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
           <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
               <li>
-                <a id="beranda" class="active" href="index.html"><i class="bi bi-house-fill" style="font-size: 1em; padding: 5px"></i> Beranda</a>
+                <a id="beranda" class="active" href="index.php"><i class="bi bi-house-fill" style="font-size: 1em; padding: 5px"></i> Beranda</a>
               </li>
 
               <!-- Mulai Kategori -->
@@ -290,7 +291,7 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
               </li>
 
               <li>
-                <a href="trainers.html"><i class="bi bi-person-fill" style="font-size: 1em; padding: 5px"></i>Mentor</a>
+                <a href="trainers.php"><i class="bi bi-person-fill" style="font-size: 1em; padding: 5px"></i>Mentor</a>
               </li>
 
               <!-- Mulai Produk -->
@@ -303,8 +304,8 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
                   <li class="dropdown">
                     <a href=""><span>Mini MBA</span><i class="bi bi-chevron-right"></i></a>
                     <ul>
-                      <li><a href="courses.html">Mini MBA SBM ITB</a></li>
-                      <li><a href="courses.html">Mini MBA Political Marketing</a></li>
+                      <li><a href="courses.php">Mini MBA SBM ITB</a></li>
+                      <li><a href="courses.php">Mini MBA Political Marketing</a></li>
                     </ul>
                   </li>
 
@@ -312,13 +313,13 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
                   <li class="dropdown">
                     <a href="#"><span>Bootcamp</span><i class="bi bi-chevron-right"></i></a>
                     <ul>
-                      <li><a href="courses.html">Komplit Data Analytics</a></li>
-                      <li><a href="courses.html">Komplit Barista Kopi</a></li>
-                      <li><a href="courses.html">Komplit Perpajakan</a></li>
-                      <li><a href="courses.html">Komplit Product Management</a></li>
-                      <li><a href="courses.html">Komplit Quality Assurance</a></li>
-                      <li><a href="courses.html">Komplit Graphic Design</a></li>
-                      <li><a href="courses.html">Komplit Career Preparation</a></li>
+                      <li><a href="courses.php">Komplit Data Analytics</a></li>
+                      <li><a href="courses.php">Komplit Barista Kopi</a></li>
+                      <li><a href="courses.php">Komplit Perpajakan</a></li>
+                      <li><a href="courses.php">Komplit Product Management</a></li>
+                      <li><a href="courses.php">Komplit Quality Assurance</a></li>
+                      <li><a href="courses.php">Komplit Graphic Design</a></li>
+                      <li><a href="courses.php">Komplit Career Preparation</a></li>
                     </ul>
                   </li>
 
@@ -326,36 +327,36 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
                   <li class="dropdown">
                     <a href="#"><span>Kelas</span><i class="bi bi-chevron-right"></i></a>
                     <ul>
-                      <li><a href="courses.html">Kelas Jago</a></li>
-                      <li><a href="courses.html">Promo Paket Kelas Istimewa</a></li>
-                      <li><a href="courses.html">Microsoft Certification Program</a></li>
+                      <li><a href="courses.php">Kelas Jago</a></li>
+                      <li><a href="courses.php">Promo Paket Kelas Istimewa</a></li>
+                      <li><a href="courses.php">Microsoft Certification Program</a></li>
                     </ul>
                   </li>
 
                   <!-- WEBINAR -->
                   <li>
-                    <a href="events.html">Webinar</a>
+                    <a href="events.php">Webinar</a>
                   </li>
 
                   <!-- Kelas Bersama -->
                   <li>
-                    <a href="pricing.html">Kelas Bersama</a>
+                    <a href="pricing.php">Kelas Bersama</a>
                   </li>
                 </ul>
               </li>
               <!-- Challenge -->
               <li>
-                <a href="events.html"><i class="bi bi-rocket-fill" style="font-size: 1em; padding: 5px"></i>Challenge</a>
+                <a href="events.php"><i class="bi bi-rocket-fill" style="font-size: 1em; padding: 5px"></i>Challenge</a>
               </li>
 
               <li>
-                <a href="kuncie_store.html"><i class="bi bi-cart-check-fill" style="font-size: 1em; padding: 5px"></i>Kuncie Store</a>
+                <a href="kuncie_store.php"><i class="bi bi-cart-check-fill" style="font-size: 1em; padding: 5px"></i>Kuncie Store</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle" />
                 </a>
-                <ul id="profile-dropdown" style = "left:-90px">
+                <ul id="profile-dropdown" style="left: -90px;">
                   <li><a href="profile.php">My Profile</a></li>
                   <li><a href="../../login.php" name = "logout">Log Out</a></li>
                 </ul>
@@ -364,6 +365,7 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
               <li>
                 <a href="#" id="welcome">Hi , <?php echo $row['username']?> !</a>
               </li>
+
             </ul>
 
             <i class="bi bi-list mobile-nav-toggle"></i>
@@ -371,56 +373,79 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
         </div>
         <!-- .navbar -->
 
+        <!-- <a href="courses.html" class="get-started-btn" style="border-radius: 40px; font-size: 20px">Masuk</a> -->
       </div>
     </header>
     <!-- End Header -->
 
-    <main id="main">
+    <main id="main" data-aos="fade-in">
       <!-- ======= Breadcrumbs ======= -->
-      <div class="breadcrumbs" data-aos="fade-in">
+      <div class="breadcrumbs">
         <div class="container">
-          <h2>Events</h2>
+          <h2>Trainers</h2>
           <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium.</p>
         </div>
       </div>
       <!-- End Breadcrumbs -->
 
-      <!-- ======= Events Section ======= -->
-      <section id="events" class="events">
+      <!-- ======= Trainers Section ======= -->
+      <section id="trainers" class="trainers">
         <div class="container" data-aos="fade-up">
-          <div class="row">
-            <div class="col-md-6 d-flex align-items-stretch">
-              <div class="card">
-                <div class="card-img">
-                  <img src="assets/img/events-1.jpg" alt="..." />
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title"><a href="">Introduction to webdesign</a></h5>
-                  <p class="fst-italic text-center">Sunday, September 26th at 7:00 pm</p>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-                  </p>
+          <div class="row" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="member">
+                <img src="assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="" />
+                <div class="member-content">
+                  <h4>Walter White</h4>
+                  <span>Web Development</span>
+                  <p>Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut</p>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 d-flex align-items-stretch">
-              <div class="card">
-                <div class="card-img">
-                  <img src="assets/img/events-2.jpg" alt="..." />
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="member">
+                <img src="assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="" />
+                <div class="member-content">
+                  <h4>Sarah Jhinson</h4>
+                  <span>Marketing</span>
+                  <p>Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus</p>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
                 </div>
-                <div class="card-body">
-                  <h5 class="card-title"><a href="">Marketing Strategies</a></h5>
-                  <p class="fst-italic text-center">Sunday, November 15th at 7:00 pm</p>
-                  <p class="card-text">
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
-                  </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="member">
+                <img src="assets/img/trainers/trainer-3.jpg" class="img-fluid" alt="" />
+                <div class="member-content">
+                  <h4>William Anderson</h4>
+                  <span>Content</span>
+                  <p>Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara</p>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- End Events Section -->
+      <!-- End Trainers Section -->
     </main>
     <!-- End #main -->
 
