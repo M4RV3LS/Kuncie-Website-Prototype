@@ -61,6 +61,7 @@ if (isset($_POST['logout']))
 </head>
 
 <body>
+    <form action = "" method = "post">
     <!-- ======= Header ======= -->
     <header id="header" class="site-header fixed-top sps header-dark sps--abv">
         <div class="container-fluid d-flex align-items-center">
@@ -402,7 +403,7 @@ if (isset($_POST['logout']))
                             </a>
                             <ul id="profile-dropdown">
                                 <li><a href="profile.php">My Profile</a></li>
-                                <li><a href="#">Log Out</a></li>
+                                <li><a href="../../login.php" value = "logout" name = "logout">Log Out</a></li>
                             </ul>
                         </li>
 

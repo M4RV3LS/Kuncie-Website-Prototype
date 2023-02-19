@@ -44,7 +44,11 @@ if ( isset($_POST['savechanges']))
     $location = $_POST['location'];
     $phone = $_POST['phone'];
     $birthday = $_POST['birthday'];
-    $sql = "UPDATE user SET username = '$username', firstname = '$firstname' , lastname = '$lastname' , organizationname = '$organizationname', loc = '$location', phonenumber = '$phone' , birthday = '$birthday' WHERE email = '$email'";
+    if(!empty($_POST['interest']))
+    {
+      $interest = $_POST['interest'];
+    }
+    $sql = "UPDATE user SET username = '$username', firstname = '$firstname' , lastname = '$lastname' , organizationname = '$organizationname', loc = '$location', interest = '$interest' , phonenumber = '$phone' , birthday = '$birthday' WHERE email = '$email'";
     $result = mysqli_query($conn, $sql);
     //header( "refresh:3;url= profile.php" );
     header("refresh:0");
@@ -57,13 +61,25 @@ if ( isset($_POST['savechanges']))
 }
 //session_destroy();
 
+
 ?>
 <!DOCTYPE html>
 <head>
   <title>Profile</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.min.css">
+	<link rel="stylesheet" href="css/style.css">
+/>
   <style>
     body {
       margin-top: 20px;
@@ -129,6 +145,21 @@ if ( isset($_POST['savechanges']))
       margin-left: 1rem;
       margin-right: 1rem;
     }
+    select {
+        width: 150px;
+        margin: 10px;
+    }
+    select:focus {
+        min-width: 150px;
+        width: auto;
+    }
+    .select {
+    padding: 10px;
+    width: 200px;
+    font-size:16px;
+    border: 0;
+    border-bottom: 3px solid teal;
+  }
   </style>
 </head>
 <body>
@@ -196,7 +227,16 @@ if ( isset($_POST['savechanges']))
                   <input class="form-control" id="inputLocation" type="text" placeholder="ex : Jl. Ganesha 10" value="<?php echo (isset($loc)) ? $loc: ''?>" name = "location" />
                 </div>
               </div>
-              <!-- Form Group (email address)-->
+              <!-- Form Interest-->
+              <div class = "mb-3">
+              <label>Select interest</label>
+
+              <select name="interest" class = "select">
+                <option value="Jurnalistik">Jurnalistic</option>
+                <option value="Accounting" <?php if($row2['interest'] == "Accounting") {echo "selected";}?>>Accounting</option>
+				      </select>
+              </div>
+                <!-- Form Group (email address)-->
               <div class="mb-3">
                 <label class="small mb-1" for="inputEmailAddress">Email address</label>
                 <input class="form-control" id="inputEmailAddress" type="email" name = "email" placeholder="Enter your email address" value="<?php echo (isset($email)) ? $email: ''?>" name = "emailaddress"/>
@@ -222,4 +262,11 @@ if ( isset($_POST['savechanges']))
       </div>
     </div>
   </div>
+</form>
+
+<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.min.js"></script>
+  <script src="js/main.js"></script>
 </body>

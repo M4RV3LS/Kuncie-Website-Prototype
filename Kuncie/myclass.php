@@ -3,7 +3,7 @@ session_start();
 require '../../function.php';
 $email = $_SESSION['email'];
 $result = mysqli_query($conn, "SELECT * FROM user_class WHERE email = '$email' AND b2bcode = 'AA1234' ");
-$result2 = mysqli_query($conn, "SELECT * FROM user_class WHERE email = '$email' AND b2bcode = NULL ");
+$result2 = mysqli_query($conn, "SELECT * FROM user_class WHERE email = '$email' AND b2bcode IS NULL ;");
 if ( isset($_POST['submit']))
 {
     if($_POST['enroll'] == "AA1234")
@@ -43,15 +43,14 @@ if ( isset($_POST['submit']))
 // {
 //   header("Location: course-material/pageclass1_4.php");
 // }
-if(isset($_POST['pageclass4_2']))
+if(isset($_POST['pageclass4_2.php']))
 {
   header("Location: course-material/pageclass4_2.php");
 }
-if(isset($_POST['pageclass4_3']))
+if(isset($_POST['pageclass4_3.php']))
 {
   header("Location: course-material/pageclass4_3.php");
 }
-
 
 
 ?>
@@ -247,7 +246,7 @@ if(isset($_POST['pageclass4_3']))
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <p style="background-color: blue; color: white; padding: 10px; border-radius: 25px">Katgeori</p>
-                  <button class="btn" type="submit" style="background-color: #f4c474"><a type = "submit" name = <?php echo $row['page']?>> <?php echo $row['page']?> Masuk</a></button>
+                  <button class="btn" type="submit" style="background-color: #f4c474"><a href ="course-material/<?php echo $row['page']?>.php">Masuk</a></button>
                 </div>
 
                 <!-- <h3><a href="course-details.html">Dasar Menulis Fiksi Cara Dee Lestari</a></h3> -->
@@ -275,7 +274,43 @@ if(isset($_POST['pageclass4_3']))
           </div>
           <?php endwhile; ?>
           <!-- End Course Item-->
-          
+          <?php while ($row = mysqli_fetch_assoc($result)) : ?>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="course-item">
+              <div class="d-flex justify-content-center">
+                <img src="assets/img/kelas unggulan 1 .jpeg" class="img-fluid mt-3 rounded" alt="..." />
+              </div>
+              <div class="course-content">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <p style="background-color: blue; color: white; padding: 10px; border-radius: 25px">Katgeori</p>
+                  <button class="btn" type="submit" style="background-color: #f4c474"><a href ="course-material/<?php echo $row['page']?>.php">Masuk</a></button>
+                </div>
+
+                <!-- <h3><a href="course-details.html">Dasar Menulis Fiksi Cara Dee Lestari</a></h3> -->
+                <h3><a href="course-details.html"><?php echo $row['class']?></a></h3>
+                <p>
+                  Mentor: Dee Lestari<br /><br />
+                  Ayo belajar menulis fiksi dari Dee Lestari dan dapatkan tips menulis fiksi berdasarkan pengalaman menulisnya selama lebih dari dua dekade.
+                </p>
+                <div class="trainer d-flex justify-content-between align-items-center">
+                  <div class="trainer-profile d-flex align-items-center">
+                    <!-- <img src="assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="" />
+                    <span>Dee Lestari</span> -->
+                  </div>
+                  <!-- <div class="trainer-rank d-flex align-items-center"><i class="bx bx-user"></i>&nbsp;995 &nbsp;&nbsp; <i class="bx bx-heart"></i>&nbsp;65</div> -->
+                  <!-- <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                  </div> -->
+                </div>
+                <h5>Progress</h5>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: <?php echo $row['progress'];?>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><?php echo $row['progress'];?>%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <?php endwhile; ?>
+          <!-- End Course Item-->
         </div>
       </div>
     </section>
@@ -298,7 +333,7 @@ if(isset($_POST['pageclass4_3']))
         </div> -->
 
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
-        <?php while ($row2 = mysqli_fetch_assoc($result2)) : ?>
+          <?php while ($row2 = mysqli_fetch_assoc($result2)) : ?>
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="course-item">
               <div class="d-flex justify-content-center">
@@ -307,9 +342,7 @@ if(isset($_POST['pageclass4_3']))
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <p style="background-color: blue; color: white; padding: 10px; border-radius: 25px">Katgeori</p>
-                  <a name = "course-material/pageclass<?php if($row2['class'] == "Word01") { echo 1 ;} elseif($row2['class'] == "Excel01") {echo 2;} elseif($row2['class'] == "PowerPoint01") {echo 3;} elseif($row2['class'] == "OneNote01") {echo 4;} else {echo 5;}?>_<?php if($row2['progress'] == 0) { echo 1 ;} elseif($row2['progress'] == 25) {echo 2;} elseif($row2['progress'] == 50) {echo 3;} else {echo 4;}?>.php">
-                  <button class="btn" type="submit" style="background-color: #f4c474">Masuk</button>
-                  </a>
+                  <button class="btn" type="submit" style="background-color: #f4c474"><a href ="course-material/<?php echo $row2['page']?>.php">Masuk</a></button>
                 </div>
 
                 <!-- <h3><a href="course-details.html">Dasar Menulis Fiksi Cara Dee Lestari</a></h3> -->
@@ -330,15 +363,55 @@ if(isset($_POST['pageclass4_3']))
                 </div>
                 <h5>Progress</h5>
                 <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: <?php echo $row2['progress'];?>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><?php echo $row['progress'];?>%</div>
+                  <div class="progress-bar" role="progressbar" style="width: <?php echo $row2['progress'];?>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><?php echo $row2['progress'];?>%</div>
                 </div>
               </div>
             </div>
           </div>
           <?php endwhile; ?>
+          <!-- End Course Item-->
+          <?php while ($row2 = mysqli_fetch_assoc($result2)) : ?>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="course-item">
+              <div class="d-flex justify-content-center">
+                <img src="assets/img/kelas unggulan 1 .jpeg" class="img-fluid mt-3 rounded" alt="..." />
+              </div>
+              <div class="course-content">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <p style="background-color: blue; color: white; padding: 10px; border-radius: 25px">Katgeori</p>
+                  <button class="btn" type="submit" style="background-color: #f4c474"><a href ="course-material/<?php echo $row['page']?>.php">Masuk</a></button>
+                </div>
+
+                <!-- <h3><a href="course-details.html">Dasar Menulis Fiksi Cara Dee Lestari</a></h3> -->
+                <h3><a href="course-details.html"><?php echo $row2['class']?></a></h3>
+                <p>
+                  Mentor: Dee Lestari<br /><br />
+                  Ayo belajar menulis fiksi dari Dee Lestari dan dapatkan tips menulis fiksi berdasarkan pengalaman menulisnya selama lebih dari dua dekade.
+                </p>
+                <div class="trainer d-flex justify-content-between align-items-center">
+                  <div class="trainer-profile d-flex align-items-center">
+                    <!-- <img src="assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="" />
+                    <span>Dee Lestari</span> -->
+                  </div>
+                  <!-- <div class="trainer-rank d-flex align-items-center"><i class="bx bx-user"></i>&nbsp;995 &nbsp;&nbsp; <i class="bx bx-heart"></i>&nbsp;65</div> -->
+                  <!-- <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                  </div> -->
+                </div>
+                <h5>Progress</h5>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: <?php echo $row2['progress'];?>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><?php echo $row2['progress'];?>%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <?php endwhile; ?>
+          <!-- End Course Item-->
         </div>
       </div>
     </section>
+
+    
   </div>
 
   <!-- jQuery 2.1.4 -->

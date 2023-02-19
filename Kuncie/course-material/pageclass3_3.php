@@ -26,7 +26,7 @@ else if($state['progress'] == 25)
 else if($state['progress'] == 50)
 {
   $update = mysqli_query($conn, "UPDATE user_class SET progress = progress + 25 WHERE email = '$email' and class = 'PowerPoint01'");
-  $page = mysqli_query($conn, "UPDATE user_class SET page = 'pageclass3_3' WHERE email = '$email' and class = 'PowerPoint01'")
+  $page = mysqli_query($conn, "UPDATE user_class SET page = 'pageclass3_3' WHERE email = '$email' and class = 'PowerPoint01'");
 }
 $state2 = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user_class WHERE email = '$email' and class = 'PowerPoint01'"));
 
