@@ -2,21 +2,30 @@
 session_start();
 require '../../function.php';
 $email = $_SESSION['email'];
-
+$result = mysqli_query($conn, "SELECT * FROM user_class WHERE email = '$email'");
 if ( isset($_POST['submit']))
 {
     if($_POST['enroll'] == "AA1234")
     {
       $sql1 = "UPDATE user_class SET b2bcode = 'AA1234' WHERE email = '$email' AND class = 'Word01' ";
+      mysqli_query($conn, $sql1);
       if(mysqli_affected_rows($conn) == 0)
       {
         $sql1_1 = "INSERT INTO user_class (`email`, `class`, `progress`,`b2bcode`) VALUES ('$email', 'Word01', '0' ,'AA1234')";
+        mysqli_query($conn, $sql1_1);
       }
       $sql2 = "UPDATE user_class SET b2bcode = 'AA1234' WHERE email = '$email' AND class = 'OneNote01' ";
+      mysqli_query($conn, $sql2);
       if(mysqli_affected_rows($conn) == 0)
       {
         $sql2_2 = "INSERT INTO user_class (`email`, `class`, `progress`,`b2bcode`) VALUES ('$email', 'OneNote01', '0' ,'AA1234')";
+        mysqli_query($conn, $sql2_2);
       }
+      header("refresh:0");
+      echo "
+      <script>
+      alert('Kelas Berhasil Ditambahkan!');
+      </script>;";
     }
     else
     {
@@ -27,6 +36,11 @@ if ( isset($_POST['submit']))
       $error = true;
     }
 }
+if(isset($_POST['pageclass1_4.php']))
+{
+  header("Location: course-material/pageclass1_4.php");
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -163,6 +177,8 @@ if ( isset($_POST['submit']))
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 </head>
 <body>
+
+    <form action = "" method = "POST">
   <div class="container-xl px-4 mt-4">
     <!-- Account page navigation-->
     <nav class="nav nav-borders">
@@ -208,6 +224,7 @@ if ( isset($_POST['submit']))
         </div> -->
 
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <?php while ($row = mysqli_fetch_assoc($result)) : ?>
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="course-item">
               <div class="d-flex justify-content-center">
@@ -216,10 +233,13 @@ if ( isset($_POST['submit']))
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <p style="background-color: blue; color: white; padding: 10px; border-radius: 25px">Katgeori</p>
+                  <form action="course-material/pageclass<?php if($row['class'] == "Word01") { echo 1 ;} elseif($row['class'] == "Excel01") {echo 2;} elseif($row['class'] == "PowerPoint01") {echo 3;} elseif($row['class'] == "OneNote01") {echo 4;} else {echo 5;}?>_<?php if($row['progress'] == 0) { echo 1 ;} elseif($row['progress'] == 25) {echo 2;} elseif($row['progress'] == 50) {echo 3;} else {echo 4;}?>.php" method = "POST">
                   <button class="btn" type="submit" style="background-color: #f4c474">Masuk Kelas</button>
+                  </form>
                 </div>
 
-                <h3><a href="course-details.html">Dasar Menulis Fiksi Cara Dee Lestari</a></h3>
+                <!-- <h3><a href="course-details.html">Dasar Menulis Fiksi Cara Dee Lestari</a></h3> -->
+                <h3><a href="course-details.html"><?php echo $row['class']?></a></h3>
                 <p>
                   Mentor: Dee Lestari<br /><br />
                   Ayo belajar menulis fiksi dari Dee Lestari dan dapatkan tips menulis fiksi berdasarkan pengalaman menulisnya selama lebih dari dua dekade.
@@ -236,12 +256,12 @@ if ( isset($_POST['submit']))
                 </div>
                 <h5>Progress</h5>
                 <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                  <div class="progress-bar" role="progressbar" style="width: <?php echo $row['progress'];?>%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><?php echo $row['progress'];?>%</div>
                 </div>
               </div>
             </div>
           </div>
-
+          <?php endwhile; ?>
           <!-- End Course Item-->
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="course-item">
@@ -251,7 +271,7 @@ if ( isset($_POST['submit']))
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <p style="background-color: blue; color: white; padding: 10px; border-radius: 25px">Katgeori</p>
-                  <button class="btn" type="submit" style="background-color: #f4c474">Masuk Kelas</button>
+                  <button class="btn" type="submit" style="background-color: #f4c474" >Masuk Kelas</button>
                 </div>
 
                 <h3><a href="course-details.html">Dasar Menulis Fiksi Cara Dee Lestari</a></h3>

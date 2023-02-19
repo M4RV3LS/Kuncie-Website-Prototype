@@ -2,9 +2,9 @@
 <?php
 session_start();
 require '../../../function.php';
-//$email = $_SESSION['email'];
-$email = "aaa@gmail.com";
-$state = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user_class WHERE email = '$email' and class = 'Fiksi01'"));
+$email = $_SESSION['email'];
+//$email = "aaa@gmail.com";
+$state = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user_class WHERE email = '$email' and class = 'Word01'"));
 if($state['progress'] == 0)
 {
   header("refresh:1;url = pageclass1_1.php");
@@ -36,10 +36,10 @@ else if($state['progress'] == 50)
 }
 else if($state['progress'] == 75)
 {
-  $update = mysqli_query($conn, "UPDATE user_class SET progress = progress + 25 WHERE email = '$email' and class = 'Fiksi01'");
+  $update = mysqli_query($conn, "UPDATE user_class SET progress = progress + 25 WHERE email = '$email' and class = 'Word01'");
 }
 
-$state2 = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user_class WHERE email = '$email' and class = 'Fiksi01'"));
+$state2 = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user_class WHERE email = '$email' and class = 'Word01'"));
 
 //next dan Previous
 
