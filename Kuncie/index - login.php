@@ -398,8 +398,7 @@ if (isset($_POST['logout']))
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg"
-                                    width="40" height="40" class="rounded-circle" />
+                                <i class="bi bi-person-circle" style = "font-size : 20px" ></i>
                             </a>
                             <ul id="profile-dropdown">
                                 <li><a href="profile.php">My Profile</a></li>
