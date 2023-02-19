@@ -58,7 +58,7 @@ if ( isset($_POST['savechanges']))
 //session_destroy();
 
 ?>
-
+<!DOCTYPE html>
 <head>
   <title>Profile</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
@@ -67,7 +67,7 @@ if ( isset($_POST['savechanges']))
   <style>
     body {
       margin-top: 20px;
-      background-color: #f2f6fc;
+      background-color: white;
       color: #69707a;
     }
     .img-account-profile {
@@ -113,6 +113,9 @@ if ( isset($_POST['savechanges']))
     .nav-borders .nav-link.active {
       color: #0061f2;
       border-bottom-color: #0061f2;
+      background-color: #f4c474;
+      border-radius: 25px;
+      padding: 10px;
     }
     .nav-borders .nav-link {
       color: #69707a;
@@ -129,14 +132,14 @@ if ( isset($_POST['savechanges']))
   </style>
 </head>
 <body>
-<form action = "" method = "POST">
   <div class="container-xl px-4 mt-4">
     <!-- Account page navigation-->
+    <!-- target="__blank" -->
     <nav class="nav nav-borders">
-      <a class="nav-link active ms-0" href="https://www.bootdey.com/snippets/view/bs5-edit-profile-account-details" target="__blank">Profile</a>
-      <a class="nav-link" href="https://www.bootdey.com/snippets/view/bs5-profile-billing-page" target="__blank">Billing</a>
-      <a class="nav-link" href="https://www.bootdey.com/snippets/view/bs5-profile-security-page" target="__blank">Security</a>
-      <a class="nav-link" href="https://www.bootdey.com/snippets/view/bs5-edit-notifications-page" target="__blank">Notifications</a>
+      <a class="nav-link active ms-0" href="profile.html">Profile</a>
+      <a class="nav-link" href="myclass.php">My Class</a>
+      <!-- <a class="nav-link" href="https://www.bootdey.com/snippets/view/bs5-profile-security-page">Security</a>
+      <a class="nav-link" href="https://www.bootdey.com/snippets/view/bs5-edit-notifications-page">Notifications</a> -->
     </nav>
     <hr class="mt-0 mb-4" />
     <div class="row">
