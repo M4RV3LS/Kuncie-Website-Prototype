@@ -80,321 +80,313 @@ if (isset($_POST['logout']))
                 <nav id="navbar" class="navbar order-last order-lg-0">
                     <ul>
                         <li>
-                            <a id="beranda" class="active" href="index.html"><i class="bi bi-house-fill"
-                                    style="font-size: 1em; padding: 5px"></i> Beranda</a>
-                        </li>
+                <a id="beranda" class="active" href="index-login.php"><i class="bi bi-house-fill" style="font-size: 1em; padding: 5px"></i> Beranda</a>
+              </li>
 
-                        <!-- Mulai Kategori -->
-                        <li class="dropdown">
-                            <a href="#"><span><i class="bi bi-tags-fill"
-                                        style="font-size: 1em; padding: 5px"></i>Kategori</span> <i
-                                    class="bi bi-chevron-down"></i></a>
-                            <ul>
-                                <!-- Bisnis -->
-                                <li class="dropdown">
-                                    <a href="#"><span>Bisnis</span> <i class="bi bi-chevron-right"></i></a>
-                                    <ul>
-                                        <li class="dropdown">
-                                            <a href="#"><span>Dasar Bisnis</span><i class="bi bi-chevron-right"></i></a>
-                                            <ul>
-                                                <li>
-                                                    <a href="course-details.html"><span>Branding</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Copywriting</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Finansial Bisnis</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Ideasi Bisnis</span></a>
-                                                </li>
-                                            </ul>
-                                        </li>
+              <!-- Mulai Kategori -->
+              <li class="dropdown">
+                <a href="#"
+                  ><span><i class="bi bi-tags-fill" style="font-size: 1em; padding: 5px"></i>Kategori</span> <i class="bi bi-chevron-down"></i
+                ></a>
+                <ul>
+                  <!-- Bisnis -->
+                  <li class="dropdown">
+                    <a href="#"><span>Bisnis</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li class="dropdown">
+                        <a href="#"><span>Dasar Bisnis</span><i class="bi bi-chevron-right"></i></a>
+                        <ul>
+                          <li>
+                            <a href="course-details.php"><span>Branding</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Copywriting</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Finansial Bisnis</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Ideasi Bisnis</span></a>
+                          </li>
+                        </ul>
+                      </li>
 
-                                        <li class="dropdown">
-                                            <a href="#"><span>Pengembangan Bisnis</span><i
-                                                    class="bi bi-chevron-right"></i></a>
-                                            <ul>
-                                                <li>
-                                                    <a href="course-details.html"><span>Copywriting</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Dana Bisnis</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Digital Marketing</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Ekspansi Bisnis</span></a>
-                                                </li>
-                                            </ul>
-                                        </li>
+                      <li class="dropdown">
+                        <a href="#"><span>Pengembangan Bisnis</span><i class="bi bi-chevron-right"></i></a>
+                        <ul>
+                          <li>
+                            <a href="course-details.php"><span>Copywriting</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Dana Bisnis</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Digital Marketing</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Ekspansi Bisnis</span></a>
+                          </li>
+                        </ul>
+                      </li>
 
-                                        <li class="dropdown">
-                                            <a href="#"><span>Tantangan Bisnis</span><i
-                                                    class="bi bi-chevron-right"></i></a>
-                                            <ul>
-                                                <li>
-                                                    <a href="course-details.html"><span>Copywriting</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Ekspansi Bisnis</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Relasi Bisnis</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Finansial Bisnis</span></a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
+                      <li class="dropdown">
+                        <a href="#"><span>Tantangan Bisnis</span><i class="bi bi-chevron-right"></i></a>
+                        <ul>
+                          <li>
+                            <a href="course-details.php"><span>Copywriting</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Ekspansi Bisnis</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Relasi Bisnis</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Finansial Bisnis</span></a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
 
-                                <!-- Industri -->
-                                <li class="dropdown">
-                                    <a href="#"><span>Industri</span> <i class="bi bi-chevron-right"></i></a>
-                                    <ul>
-                                        <li class="dropdown">
-                                            <a href="#"><span>Fashion</span><i class="bi bi-chevron-right"></i></a>
-                                            <ul>
-                                                <li>
-                                                    <a href="course-details.html"><span>Ideal Bisnis</span></a>
-                                                </li>
-                                            </ul>
-                                        </li>
+                  <!-- Industri -->
+                  <li class="dropdown">
+                    <a href="#"><span>Industri</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li class="dropdown">
+                        <a href="#"><span>Fashion</span><i class="bi bi-chevron-right"></i></a>
+                        <ul>
+                          <li>
+                            <a href="course-details.php"><span>Ideal Bisnis</span></a>
+                          </li>
+                        </ul>
+                      </li>
 
-                                        <li class="dropdown">
-                                            <a href="#"><span>Industri Kreatif</span><i
-                                                    class="bi bi-chevron-right"></i></a>
-                                            <ul>
-                                                <li>
-                                                    <a href="course-details.html"><span>Film & TV</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Fotografi</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Ideasi Bisnis</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Pembuatan Konten</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Penulisan</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Seni Dan Kerajinan</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Seni Rupa</span></a>
-                                                </li>
-                                            </ul>
-                                        </li>
+                      <li class="dropdown">
+                        <a href="#"><span>Industri Kreatif</span><i class="bi bi-chevron-right"></i></a>
+                        <ul>
+                          <li>
+                            <a href="course-details.php"><span>Film & TV</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Fotografi</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Ideasi Bisnis</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Pembuatan Konten</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Penulisan</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Seni Dan Kerajinan</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Seni Rupa</span></a>
+                          </li>
+                        </ul>
+                      </li>
 
-                                        <li class="dropdown">
-                                            <a href="#"><span>Makanan & Minuman</span><i
-                                                    class="bi bi-chevron-right"></i></a>
-                                            <ul>
-                                                <li>
-                                                    <a href="course-details.html"><span>Barista</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Ekspansi Bisnis</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Ideasi Bisnis</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Pembuatan Konten</span></a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
+                      <li class="dropdown">
+                        <a href="#"><span>Makanan & Minuman</span><i class="bi bi-chevron-right"></i></a>
+                        <ul>
+                          <li>
+                            <a href="course-details.php"><span>Barista</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Ekspansi Bisnis</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Ideasi Bisnis</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Pembuatan Konten</span></a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
 
-                                <!-- Keterampilan -->
-                                <li class="dropdown">
-                                    <a href="#"><span>Keterampilan</span> <i class="bi bi-chevron-right"></i></a>
-                                    <ul>
-                                        <li class="dropdown">
-                                            <a href="#"><span>Keterampilan Khusus</span><i
-                                                    class="bi bi-chevron-right"></i></a>
-                                            <ul>
-                                                <li>
-                                                    <a href="course-details.html"><span>Barista</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Copywriting</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Digital Marketing</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Film & TV</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Finansial Bisnis</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Fotografi</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Microsoft Office</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Pembuatan Konten</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Pengembangan Aplikasi</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Penulisan</span></a>
-                                                </li>
-                                            </ul>
-                                        </li>
+                  <!-- Keterampilan -->
+                  <li class="dropdown">
+                    <a href="#"><span>Keterampilan</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li class="dropdown">
+                        <a href="#"><span>Keterampilan Khusus</span><i class="bi bi-chevron-right"></i></a>
+                        <ul>
+                          <li>
+                            <a href="course-details.php"><span>Barista</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Copywriting</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Digital Marketing</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Film & TV</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Finansial Bisnis</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Fotografi</span></a>
+                          </li>
+                          <li>
+                            <a href="kelas-bisnis.php"><span>Microsoft Office</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Pembuatan Konten</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Pengembangan Aplikasi</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Penulisan</span></a>
+                          </li>
+                        </ul>
+                      </li>
 
-                                        <li class="dropdown">
-                                            <a href="#"><span>Pengembangan Diri</span><i
-                                                    class="bi bi-chevron-right"></i></a>
-                                            <ul>
-                                                <li>
-                                                    <a href="course-details.html"><span>Presentasi</span></a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
+                      <li class="dropdown">
+                        <a href="#"><span>Pengembangan Diri</span><i class="bi bi-chevron-right"></i></a>
+                        <ul>
+                          <li>
+                            <a href="course-details.php"><span>Presentasi</span></a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
 
-                                <!-- Profesional -->
-                                <li class="dropdown">
-                                    <a href="#"><span>Profesional</span> <i class="bi bi-chevron-right"></i></a>
-                                    <ul>
-                                        <li class="dropdown">
-                                            <a href="#"><span>Keahlian Dunia Kerja</span><i
-                                                    class="bi bi-chevron-right"></i></a>
-                                            <ul>
-                                                <li>
-                                                    <a href="course-details.html"><span>Copywriting</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Microsoft Office</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Persiapan Karir</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Presentasi</span></a>
-                                                </li>
-                                            </ul>
-                                        </li>
+                  <!-- Profesional -->
+                  <li class="dropdown">
+                    <a href="#"><span>Profesional</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li class="dropdown">
+                        <a href="#"><span>Keahlian Dunia Kerja</span><i class="bi bi-chevron-right"></i></a>
+                        <ul>
+                          <li>
+                            <a href="course-details.php"><span>Copywriting</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Microsoft Office</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Persiapan Karir</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Presentasi</span></a>
+                          </li>
+                        </ul>
+                      </li>
 
-                                        <li class="dropdown">
-                                            <a href="#"><span>Media Sosial</span><i class="bi bi-chevron-right"></i></a>
-                                            <ul>
-                                                <li>
-                                                    <a href="course-details.html"><span>Digital Marketing</span></a>
-                                                </li>
-                                            </ul>
-                                        </li>
+                      <li class="dropdown">
+                        <a href="#"><span>Media Sosial</span><i class="bi bi-chevron-right"></i></a>
+                        <ul>
+                          <li>
+                            <a href="course-details.php"><span>Digital Marketing</span></a>
+                          </li>
+                        </ul>
+                      </li>
 
-                                        <li class="dropdown">
-                                            <a href="#"><span>Tech</span><i class="bi bi-chevron-right"></i></a>
-                                            <ul>
-                                                <li>
-                                                    <a href="course-details.html"><span>Digital Marketing</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Pengembangan Aplikasi</span></a>
-                                                </li>
-                                                <li>
-                                                    <a href="course-details.html"><span>Persiapan Karir</span></a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+                      <li class="dropdown">
+                        <a href="#"><span>Tech</span><i class="bi bi-chevron-right"></i></a>
+                        <ul>
+                          <li>
+                            <a href="course-details.php"><span>Digital Marketing</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Pengembangan Aplikasi</span></a>
+                          </li>
+                          <li>
+                            <a href="course-details.php"><span>Persiapan Karir</span></a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
 
+              <li>
+                <a href="pricing.php"><i class="bi bi-briefcase-fill" style="font-size: 1em; padding: 5px"></i>Kuncie Bersama</a>
+              </li>
 
+              <!-- Mulai Produk -->
+              <li class="dropdown">
+                <a href="#"
+                  ><span><i class="bi bi-bag-check-fill" style="font-size: 1em; padding: 5px"></i>Produk</span> <i class="bi bi-chevron-down"></i
+                ></a>
+                <ul>
+                  <!-- Mini MBA -->
+                  <li class="dropdown">
+                    <a href=""><span>Kuncie Executive</span><i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="courses.php">Mini MBA SBM ITB</a></li>
+                      <li><a href="courses.php">Mini MBA Political Marketing</a></li>
+                      <li><a href="courses.php">Live MBA Strategy</a></li>
+                      <li><a href="courses.php">Live MBA Leadership</a></li>
+                    </ul>
+                  </li>
 
-                        <li>
-                            <a href="pricing.html"><i class="bi bi-briefcase-fill"
-                                    style="font-size: 1em; padding: 5px"></i>Kuncie Bersama</a>
-                        </li>
+                  <!-- Kuncie Sukses -->
+                  <li class="dropdown">
+                    <a href="#"><span>Kuncie Sukses</span><i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="courses.php">Komplit Data Analytics</a></li>
+                      <li><a href="courses.php">Komplit Product Management</a></li>
+                      <li><a href="courses.php">Komplit Quality Assurance</a></li>
+                    </ul>
+                  </li>
+                  <!--Kuncie Komplit-->
+                  <li class="dropdown">
+                    <a href="#"><span>Kuncie Komplit</span><i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="courses.php">Komplit Barista Kopi</a></li>
+                      <li><a href="courses.php">Komplit Perpajakan</a></li>
+                      <li><a href="courses.php">Komplit Graphic Design</a></li>
+                      <li><a href="courses.php">Komplit Career Preparation</a></li>
+                    </ul>
+                  </li>
 
-                        <!-- Mulai Produk -->
-                        <li class="dropdown">
-                            <a href="#"><span><i class="bi bi-bag-check-fill"
-                                        style="font-size: 1em; padding: 5px"></i>Produk</span> <i
-                                    class="bi bi-chevron-down"></i></a>
-                            <ul>
-                                <!-- Mini MBA -->
-                                <li class="dropdown">
-                                    <a href=""><span>Kuncie Executive</span><i class="bi bi-chevron-right"></i></a>
-                                    <ul>
-                                        <li><a href="courses.html">Mini MBA SBM ITB</a></li>
-                                        <li><a href="courses.html">Mini MBA Political Marketing</a></li>
-                                        <li><a href="courses.html">Live MBA Strategy</a></li>
-                                        <li><a href="courses.html">Live MBA Leadership</a></li>
-                                    </ul>
-                                </li>
+                  <!-- Kelas -->
+                  <li class="dropdown">
+                    <a href="#"><span>Kelas</span><i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="courses.php">Kelas Jago</a></li>
+                      <li><a href="courses.php">Promo Paket Kelas Istimewa</a></li>
+                      <li><a href="courses.php">Microsoft Certification Program</a></li>
+                    </ul>
+                  </li>
 
-                                <!-- Kuncie Sukses -->
-                                <li class="dropdown">
-                                    <a href="#"><span>Kuncie Sukses</span><i class="bi bi-chevron-right"></i></a>
-                                    <ul>
-                                        <li><a href="courses.html">Komplit Data Analytics</a></li>
-                                        <li><a href="courses.html">Komplit Product Management</a></li>
-                                        <li><a href="courses.html">Komplit Quality Assurance</a></li>
-                                    </ul>
-                                </li>
-                                <!--Kuncie Komplit-->
-                                <li class="dropdown">
-                                    <a href="#"><span>Kuncie Komplit</span><i class="bi bi-chevron-right"></i></a>
-                                    <ul>
-                                        <li><a href="courses.html">Komplit Barista Kopi</a></li>
-                                        <li><a href="courses.html">Komplit Perpajakan</a></li>
-                                        <li><a href="courses.html">Komplit Graphic Design</a></li>
-                                        <li><a href="courses.html">Komplit Career Preparation</a></li>
-                                    </ul>
-                                </li>
+                  <!-- WEBINAR -->
+                  <li>
+                    <a href="events.php">Webinar</a>
+                  </li>
 
-                                <!-- Kelas -->
-                                <li class="dropdown">
-                                    <a href="#"><span>Kelas</span><i class="bi bi-chevron-right"></i></a>
-                                    <ul>
-                                        <li><a href="courses.html">Kelas Jago</a></li>
-                                        <li><a href="courses.html">Promo Paket Kelas Istimewa</a></li>
-                                        <li><a href="courses.html">Microsoft Certification Program</a></li>
-                                    </ul>
-                                </li>
-
-                                <!-- WEBINAR -->
-                                <li>
-                                    <a href="events.html">Webinar</a>
-                                </li>
-
-                                <!-- Kelas Bersama -->
-                                <!-- <li>
-                    <a href="pricing.html">Kelas Bersama</a>
+                  <!-- Kelas Bersama -->
+                  <!-- <li>
+                    <a href="pricing.php">Kelas Bersama</a>
                   </li> -->
-                            </ul>
-                        </li>
-                        <!-- End Produk -->
+                </ul>
+              </li>
+              <!-- End Produk -->
 
-                        <!--Mentor-->
-                        <li>
-                            <a href="trainers.html"><i class="bi bi-person-fill"
-                                    style="font-size: 1em; padding: 5px"></i>Mentor</a>
-                        </li>
-                        <!-- Challenge -->
-                        <li>
-                            <a href="events.html"><i class="bi bi-rocket-fill"
-                                    style="font-size: 1em; padding: 5px"></i>Challenge</a>
-                        </li>
+              <!--Mentor-->
+              <li>
+                <a href="trainers.php"><i class="bi bi-person-fill" style="font-size: 1em; padding: 5px"></i>Mentor</a>
+              </li>
+              <!-- Challenge -->
+              <li>
+                <a href="kuncie_challenge.php"><i class="bi bi-rocket-fill" style="font-size: 1em; padding: 5px"></i>Challenge</a>
+              </li>
+
+              <!-- Kuncie Store -->
+              <li>
+                <a href="kuncie_store.php"><i class="bi bi-bag-check-fill" style="font-size: 1em; padding: 5px"></i>Kuncie Store</a>
+              </li>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -420,7 +412,7 @@ if (isset($_POST['logout']))
                 </nav>
             </div>
             <!-- .navbar -->
-            <!-- <a href="courses.html" class="get-started-btn">Masuk</a> -->
+            <!-- <a href="courses.php" class="get-started-btn">Masuk</a> -->
         </div>
     </header>
     <!-- End Header -->
@@ -466,51 +458,7 @@ if (isset($_POST['logout']))
         </div>
       </div>  -->
 
-        <div class="container-fluid carousel-contain py-5">
-            <div class="container">
-                <h2 class="text-center mb-5" style="color: black" ;>Advertisement</h2>
-                <div id="carouselExampleIndicators" class="carousel slide col-lg-6 offset-lg-3" data-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner ratio ratio-16x9" style="border-radius: 25px">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="assets/img/course-1.jpg" alt="First slide" />
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="assets/img/course-2.jpg" alt="Second slide" />
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="assets/img/course-3.jpg" alt="Third slide" />
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <svg fill="#FFB533" xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-left-circle-fill"
-                            viewBox="0 0 16 16" style="width: 50px; height: 50px">
-                            <path
-                                d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
-                        </svg>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <svg fill="#FFB533" xmlns="http://www.w3.org/2000/svg"
-                            class="bi bi-arrow-right-circle-fill fa-5x" viewBox="0 0 16 16"
-                            style="width: 50px; height: 50px">
-                            <path
-                                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
-                        </svg>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </div>
+        
 
         <!--End oF Carousel -->
         <!-- ======= About Section ======= -->
@@ -718,7 +666,7 @@ if (isset($_POST['logout']))
 
         <!-- Recommendation Section -->
         <section class="pt-5 pb-5">
-            <div class="container">
+            <div class="container" >
                 <div class="row">
                     <div class="col-6">
                         <h3 class="mb-3">Class Recommendations For You</h3>
@@ -733,11 +681,11 @@ if (isset($_POST['logout']))
                             <i class="fa fa-arrow-right" style="color: white"></i>
                         </a>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12" >
                         <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
+                            <div class="carousel-inner" >
                                 <div class="carousel-item active">
-                                    <div class="row">
+                                    <div class="row"style="background-color:white">
                                         <div class="col-md-4 mb-3">
                                             <div class="card">
                                                 <img class="img-fluid" alt="100%x280"

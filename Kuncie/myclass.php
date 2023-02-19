@@ -8,26 +8,40 @@ if ( isset($_POST['submit']))
 {
     if($_POST['enroll'] == "AA1234")
     {
-      $sql1 = "UPDATE user_class SET b2bcode = 'AA1234' WHERE email = '$email' AND class = 'Word01' ";
-      mysqli_query($conn, $sql1);
-      if(mysqli_affected_rows($conn) == 0)
+      $result = "SELECT * FROM user_class WHERE email = '$email' AND b2bcode = 'AA1234' AND class = 'Word01' ";
+      $result2 = "SELECT * FROM user_class WHERE email = '$email' AND b2bcode = 'AA1234' AND class = 'OneNote01' ";
+      if(mysqli_num_rows(mysqli_query($conn,$result)) > 0)
       {
-        $sql1_1 = "INSERT INTO user_class (`email`, `class`, `progress`,`b2bcode`,`page`) VALUES ('$email', 'Word01', '0' ,'AA1234','pageclass1_1')";
-
-        mysqli_query($conn, $sql1_1);
-      }
-      $sql2 = "UPDATE user_class SET b2bcode = 'AA1234' WHERE email = '$email' AND class = 'OneNote01' ";
-      mysqli_query($conn, $sql2);
-      if(mysqli_affected_rows($conn) == 0)
-      {
-        $sql2_2 = "INSERT INTO user_class (`email`, `class`, `progress`,`b2bcode`,`page`) VALUES ('$email', 'OneNote01', '0' ,'AA1234','pageclass4_1')";
-        mysqli_query($conn, $sql2_2);
-      }
-      header("refresh:0");
+        header("refresh:0");
       echo "
       <script>
-      alert('Kelas Berhasil Ditambahkan!');
+      alert('Anda sudah terdaftar pada Kelas ini!');
       </script>;";
+      }
+  
+      else 
+      {
+        $sql1 = "UPDATE user_class SET b2bcode = 'AA1234' WHERE email = '$email' AND class = 'Word01' ";
+        mysqli_query($conn, $sql1);
+        if(mysqli_affected_rows($conn) == 0)
+        {
+          $sql1_1 = "INSERT INTO user_class (`email`, `class`, `progress`,`b2bcode`,`page`) VALUES ('$email', 'Word01', '0' ,'AA1234','pageclass1_1')";
+
+          mysqli_query($conn, $sql1_1);
+        }
+        $sql2 = "UPDATE user_class SET b2bcode = 'AA1234' WHERE email = '$email' AND class = 'OneNote01' ";
+        mysqli_query($conn, $sql2);
+        if(mysqli_affected_rows($conn) == 0)
+        {
+          $sql2_2 = "INSERT INTO user_class (`email`, `class`, `progress`,`b2bcode`,`page`) VALUES ('$email', 'OneNote01', '0' ,'AA1234','pageclass4_1')";
+          mysqli_query($conn, $sql2_2);
+        }
+        header("refresh:0");
+        echo "
+        <script>
+        alert('Kelas Berhasil Ditambahkan!');
+        </script>;";
+      }
     }
     else
     {
@@ -195,8 +209,8 @@ if(isset($_POST['pageclass4_3.php']))
     <!-- Account page navigation-->
     <nav class="nav nav-borders">
       <a class="nav-link" href="index - login.php">Home</a>
-      <a class="nav-link ms-0" href="profile.html">Profile</a>
-      <a class="nav-link active" href="myclass.html">My Class</a>
+      <a class="nav-link ms-0" href="profile.php">Profile</a>
+      <a class="nav-link active" href="myclass.php">My Class</a>
       <!-- <a class="nav-link" href="https://www.bootdey.com/snippets/view/bs5-profile-security-page">Security</a>
       <a class="nav-link" href="https://www.bootdey.com/snippets/view/bs5-edit-notifications-page">Notifications</a> -->
     </nav>
@@ -379,7 +393,7 @@ if(isset($_POST['pageclass4_3.php']))
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <p style="background-color: blue; color: white; padding: 10px; border-radius: 25px">Katgeori</p>
-                  <button class="btn" type="submit" style="background-color: #f4c474"><a href ="course-material/<?php echo $row['page']?>.php">Masuk</a></button>
+                  <button class="btn" type="submit" style="background-color: #f4c474"><a href ="course-material/<?php echo $row2['page']?>.php">Masuk</a></button>
                 </div>
 
                 <!-- <h3><a href="course-details.html">Dasar Menulis Fiksi Cara Dee Lestari</a></h3> -->

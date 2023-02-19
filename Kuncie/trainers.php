@@ -43,24 +43,26 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
   </head>
 
   <body>
+  <form action = "" method = "post">
     <!-- ======= Header ======= -->
     <header id="header" class="site-header fixed-top sps header-dark sps--abv">
-      <div class="container-fluid d-flex align-items-center">
-        <!-- <h1 class="logo me-auto"><a href="index.html">Mentor</a></h1> -->
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <div>
-          <div class="d-flex">
-            <div class="align-self-center elumine-site-logo col-8 offset-2">
-              <a href="index.php" class="logo me-auto"><img src="assets/img/kuncie_logo.png" alt="Responsive image" class="img-fluid" /></a>
+        <div class="container-fluid d-flex align-items-center">
+            <!-- <h1 class="logo me-auto"><a href="index.html">Mentor</a></h1> -->
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <div>
+                <div class="d-flex">
+                    <div class="align-self-center elumine-site-logo col-8 offset-2">
+                        <a href="index.php" class="logo me-auto"><img src="assets/img/kuncie_logo.png"
+                                alt="Responsive image" class="img-fluid" /></a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
 
-        <div class="header-container navbar navbar-toggleable-md navbar navbar-inverse justify-content-between">
-          <nav id="navbar" class="navbar order-last order-lg-0">
-            <ul>
-              <li>
-                <a id="beranda" class="active" href="index.php"><i class="bi bi-house-fill" style="font-size: 1em; padding: 5px"></i> Beranda</a>
+            <div class="header-container navbar navbar-toggleable-md navbar navbar-inverse justify-content-between">
+                <nav id="navbar" class="navbar order-last order-lg-0">
+                    <ul>
+                        <li>
+                <a id="beranda" class="active" href="index-login.php"><i class="bi bi-house-fill" style="font-size: 1em; padding: 5px"></i> Beranda</a>
               </li>
 
               <!-- Mulai Kategori -->
@@ -77,16 +79,16 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
                         <a href="#"><span>Dasar Bisnis</span><i class="bi bi-chevron-right"></i></a>
                         <ul>
                           <li>
-                            <a href="#"><span>Branding</span></a>
+                            <a href="course-details.php"><span>Branding</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Copywriting</span></a>
+                            <a href="course-details.php"><span>Copywriting</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Finansial Bisnis</span></a>
+                            <a href="course-details.php"><span>Finansial Bisnis</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Ideasi Bisnis</span></a>
+                            <a href="course-details.php"><span>Ideasi Bisnis</span></a>
                           </li>
                         </ul>
                       </li>
@@ -95,16 +97,16 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
                         <a href="#"><span>Pengembangan Bisnis</span><i class="bi bi-chevron-right"></i></a>
                         <ul>
                           <li>
-                            <a href="#"><span>Copywriting</span></a>
+                            <a href="course-details.php"><span>Copywriting</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Dana Bisnis</span></a>
+                            <a href="course-details.php"><span>Dana Bisnis</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Digital Marketing</span></a>
+                            <a href="course-details.php"><span>Digital Marketing</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Ekspansi Bisnis</span></a>
+                            <a href="course-details.php"><span>Ekspansi Bisnis</span></a>
                           </li>
                         </ul>
                       </li>
@@ -113,16 +115,16 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
                         <a href="#"><span>Tantangan Bisnis</span><i class="bi bi-chevron-right"></i></a>
                         <ul>
                           <li>
-                            <a href="#"><span>Copywriting</span></a>
+                            <a href="course-details.php"><span>Copywriting</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Ekspansi Bisnis</span></a>
+                            <a href="course-details.php"><span>Ekspansi Bisnis</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Relasi Bisnis</span></a>
+                            <a href="course-details.php"><span>Relasi Bisnis</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Finansial Bisnis</span></a>
+                            <a href="course-details.php"><span>Finansial Bisnis</span></a>
                           </li>
                         </ul>
                       </li>
@@ -137,7 +139,7 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
                         <a href="#"><span>Fashion</span><i class="bi bi-chevron-right"></i></a>
                         <ul>
                           <li>
-                            <a href="#"><span>Ideal Bisnis</span></a>
+                            <a href="course-details.php"><span>Ideal Bisnis</span></a>
                           </li>
                         </ul>
                       </li>
@@ -146,25 +148,25 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
                         <a href="#"><span>Industri Kreatif</span><i class="bi bi-chevron-right"></i></a>
                         <ul>
                           <li>
-                            <a href="#"><span>Film & TV</span></a>
+                            <a href="course-details.php"><span>Film & TV</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Fotografi</span></a>
+                            <a href="course-details.php"><span>Fotografi</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Ideasi Bisnis</span></a>
+                            <a href="course-details.php"><span>Ideasi Bisnis</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Pembuatan Konten</span></a>
+                            <a href="course-details.php"><span>Pembuatan Konten</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Penulisan</span></a>
+                            <a href="course-details.php"><span>Penulisan</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Seni Dan Kerajinan</span></a>
+                            <a href="course-details.php"><span>Seni Dan Kerajinan</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Seni Rupa</span></a>
+                            <a href="course-details.php"><span>Seni Rupa</span></a>
                           </li>
                         </ul>
                       </li>
@@ -173,16 +175,16 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
                         <a href="#"><span>Makanan & Minuman</span><i class="bi bi-chevron-right"></i></a>
                         <ul>
                           <li>
-                            <a href="#"><span>Barista</span></a>
+                            <a href="course-details.php"><span>Barista</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Ekspansi Bisnis</span></a>
+                            <a href="course-details.php"><span>Ekspansi Bisnis</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Ideasi Bisnis</span></a>
+                            <a href="course-details.php"><span>Ideasi Bisnis</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Pembuatan Konten</span></a>
+                            <a href="course-details.php"><span>Pembuatan Konten</span></a>
                           </li>
                         </ul>
                       </li>
@@ -197,34 +199,34 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
                         <a href="#"><span>Keterampilan Khusus</span><i class="bi bi-chevron-right"></i></a>
                         <ul>
                           <li>
-                            <a href="#"><span>Barista</span></a>
+                            <a href="course-details.php"><span>Barista</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Copywriting</span></a>
+                            <a href="course-details.php"><span>Copywriting</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Digital Marketing</span></a>
+                            <a href="course-details.php"><span>Digital Marketing</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Film & TV</span></a>
+                            <a href="course-details.php"><span>Film & TV</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Finansial Bisnis</span></a>
+                            <a href="course-details.php"><span>Finansial Bisnis</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Fotografi</span></a>
+                            <a href="course-details.php"><span>Fotografi</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Microsoft Office</span></a>
+                            <a href="kelas-bisnis.php"><span>Microsoft Office</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Pembuatan Konten</span></a>
+                            <a href="course-details.php"><span>Pembuatan Konten</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Pengembangan Aplikasi</span></a>
+                            <a href="course-details.php"><span>Pengembangan Aplikasi</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Penulisan</span></a>
+                            <a href="course-details.php"><span>Penulisan</span></a>
                           </li>
                         </ul>
                       </li>
@@ -233,7 +235,7 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
                         <a href="#"><span>Pengembangan Diri</span><i class="bi bi-chevron-right"></i></a>
                         <ul>
                           <li>
-                            <a href="#"><span>Presentasi</span></a>
+                            <a href="course-details.php"><span>Presentasi</span></a>
                           </li>
                         </ul>
                       </li>
@@ -248,16 +250,16 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
                         <a href="#"><span>Keahlian Dunia Kerja</span><i class="bi bi-chevron-right"></i></a>
                         <ul>
                           <li>
-                            <a href="#"><span>Copywriting</span></a>
+                            <a href="course-details.php"><span>Copywriting</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Microsoft Office</span></a>
+                            <a href="course-details.php"><span>Microsoft Office</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Persiapan Karir</span></a>
+                            <a href="course-details.php"><span>Persiapan Karir</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Presentasi</span></a>
+                            <a href="course-details.php"><span>Presentasi</span></a>
                           </li>
                         </ul>
                       </li>
@@ -266,7 +268,7 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
                         <a href="#"><span>Media Sosial</span><i class="bi bi-chevron-right"></i></a>
                         <ul>
                           <li>
-                            <a href="#"><span>Digital Marketing</span></a>
+                            <a href="course-details.php"><span>Digital Marketing</span></a>
                           </li>
                         </ul>
                       </li>
@@ -275,13 +277,13 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
                         <a href="#"><span>Tech</span><i class="bi bi-chevron-right"></i></a>
                         <ul>
                           <li>
-                            <a href="#"><span>Digital Marketing</span></a>
+                            <a href="course-details.php"><span>Digital Marketing</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Pengembangan Aplikasi</span></a>
+                            <a href="course-details.php"><span>Pengembangan Aplikasi</span></a>
                           </li>
                           <li>
-                            <a href="#"><span>Persiapan Karir</span></a>
+                            <a href="course-details.php"><span>Persiapan Karir</span></a>
                           </li>
                         </ul>
                       </li>
@@ -291,7 +293,7 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
               </li>
 
               <li>
-                <a href="trainers.php"><i class="bi bi-person-fill" style="font-size: 1em; padding: 5px"></i>Mentor</a>
+                <a href="pricing.php"><i class="bi bi-briefcase-fill" style="font-size: 1em; padding: 5px"></i>Kuncie Bersama</a>
               </li>
 
               <!-- Mulai Produk -->
@@ -302,22 +304,30 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
                 <ul>
                   <!-- Mini MBA -->
                   <li class="dropdown">
-                    <a href=""><span>Mini MBA</span><i class="bi bi-chevron-right"></i></a>
+                    <a href=""><span>Kuncie Executive</span><i class="bi bi-chevron-right"></i></a>
                     <ul>
                       <li><a href="courses.php">Mini MBA SBM ITB</a></li>
                       <li><a href="courses.php">Mini MBA Political Marketing</a></li>
+                      <li><a href="courses.php">Live MBA Strategy</a></li>
+                      <li><a href="courses.php">Live MBA Leadership</a></li>
                     </ul>
                   </li>
 
-                  <!-- Bootcamp -->
+                  <!-- Kuncie Sukses -->
                   <li class="dropdown">
-                    <a href="#"><span>Bootcamp</span><i class="bi bi-chevron-right"></i></a>
+                    <a href="#"><span>Kuncie Sukses</span><i class="bi bi-chevron-right"></i></a>
                     <ul>
                       <li><a href="courses.php">Komplit Data Analytics</a></li>
-                      <li><a href="courses.php">Komplit Barista Kopi</a></li>
-                      <li><a href="courses.php">Komplit Perpajakan</a></li>
                       <li><a href="courses.php">Komplit Product Management</a></li>
                       <li><a href="courses.php">Komplit Quality Assurance</a></li>
+                    </ul>
+                  </li>
+                  <!--Kuncie Komplit-->
+                  <li class="dropdown">
+                    <a href="#"><span>Kuncie Komplit</span><i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="courses.php">Komplit Barista Kopi</a></li>
+                      <li><a href="courses.php">Komplit Perpajakan</a></li>
                       <li><a href="courses.php">Komplit Graphic Design</a></li>
                       <li><a href="courses.php">Komplit Career Preparation</a></li>
                     </ul>
@@ -339,42 +349,53 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
                   </li>
 
                   <!-- Kelas Bersama -->
-                  <li>
+                  <!-- <li>
                     <a href="pricing.php">Kelas Bersama</a>
-                  </li>
+                  </li> -->
                 </ul>
+              </li>
+              <!-- End Produk -->
+
+              <!--Mentor-->
+              <li>
+                <a href="trainers.php"><i class="bi bi-person-fill" style="font-size: 1em; padding: 5px"></i>Mentor</a>
               </li>
               <!-- Challenge -->
               <li>
-                <a href="events.php"><i class="bi bi-rocket-fill" style="font-size: 1em; padding: 5px"></i>Challenge</a>
+                <a href="kuncie_challenge.php"><i class="bi bi-rocket-fill" style="font-size: 1em; padding: 5px"></i>Challenge</a>
               </li>
 
+              <!-- Kuncie Store -->
               <li>
-                <a href="kuncie_store.php"><i class="bi bi-cart-check-fill" style="font-size: 1em; padding: 5px"></i>Kuncie Store</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle" />
-                </a>
-                <ul id="profile-dropdown" style="left: -90px;">
-                  <li><a href="profile.php">My Profile</a></li>
-                  <li><a href="../../login.php" name = "logout">Log Out</a></li>
-                </ul>
+                <a href="kuncie_store.php"><i class="bi bi-bag-check-fill" style="font-size: 1em; padding: 5px"></i>Kuncie Store</a>
               </li>
 
-              <li>
-                <a href="#" id="welcome">Hi , <?php echo $row['username']?> !</a>
-              </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="bi bi-person-circle" style = "font-size : 20px" ></i>
+                            </a>
+                            <ul id="profile-dropdown">
+                                <li><a href="profile.php">My Profile</a></li>
+                                <li><a href="../../login.php" value = "logout" name = "logout">Log Out</a></li>
+                            </ul>
+                        </li>
 
-            </ul>
+                        <li>
+                            <a href="#" id="welcome">Hi , <?php echo $row['username']?>!</a>
+                        </li>
 
-            <i class="bi bi-list mobile-nav-toggle"></i>
-          </nav>
+                        <li style="visibility: hidden">
+                            <a href="events.php">Webinar</a>
+                        </li>
+                    </ul>
+
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+                </nav>
+            </div>
+            <!-- .navbar -->
+            <!-- <a href="courses.php" class="get-started-btn">Masuk</a> -->
         </div>
-        <!-- .navbar -->
-
-        <!-- <a href="courses.html" class="get-started-btn" style="border-radius: 40px; font-size: 20px">Masuk</a> -->
-      </div>
     </header>
     <!-- End Header -->
 

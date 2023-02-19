@@ -79,7 +79,7 @@ if ( isset($_POST['savechanges']))
 	
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.min.css">
 	<link rel="stylesheet" href="css/style.css">
-/>
+
   <style>
     body {
       margin-top: 20px;
