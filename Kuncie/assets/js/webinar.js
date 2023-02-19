@@ -33,12 +33,13 @@ function showgallery(curarra) {
                 <div class="card-img">
                   <img src="${curarra[i].src}" alt="..." />
                 </div>
-                <div class="card-body">
+                <div class="card-body d-flex-row ">
                   <h5 class="card-title"><a href="course-details.html">${curarra[i].name}</a></h5>
                   <p class="fst-italic text-center">${curarra[i].time}</p>
                   <p class="card-text">
                   ${curarra[i].desc}
                   </p>
+                  <p class = "d-flex justify-content-center"><a class="btn" href="#" role="button" style="background-color: #1aa294; color: white; font-weight: bold; border-radius: 30px"> Daftar Sekarang </a></p>
                 </div>
               </div>
             </div>

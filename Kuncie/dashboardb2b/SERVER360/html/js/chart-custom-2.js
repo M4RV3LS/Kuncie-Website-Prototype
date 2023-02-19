@@ -3608,7 +3608,7 @@ if (jQuery("#apex-radialbar-chart").length) {
         },
       },
     },
-    series: [90, 75],
+    series: [80, 60],
     labels: ["Activated Seats", "Total Viewer"],
     colors: ["#4e37b2", "#ff7750"],
   };
@@ -6280,12 +6280,12 @@ if (
         {
           name: "John",
           color: "#4e37b2",
-          data: [3, 4, 3, 5, 4, 10, 12],
+          data: [1, 4, 3, 5, 4, 2, 3],
         },
         {
           name: "Jane",
           color: "#1ee2ac",
-          data: [1, 3, 4, 3, 3, 5, 4],
+          data: [3, 3, 4, 2, 3, 10, 12],
         },
       ],
     }),
