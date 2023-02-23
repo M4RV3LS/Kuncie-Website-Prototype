@@ -727,7 +727,7 @@ if (isset($_POST['logout']))
                                             <div class="col-md-4 mb-3">
                                                 <div class="card">
                                                     <img class="img-fluid" alt="100%x280"
-                                                        src=src="assets/img/kelas unggulan 2.jpeg" />
+                                                        src="assets/img/kelas unggulan 2.jpeg" />
                                                     <div class="card-body">
                                                         <h3><a href="course-details.php">Cara berpresentasi dengan
                                                                 menggugah dan efektif</a>
@@ -745,7 +745,7 @@ if (isset($_POST['logout']))
                                             <div class="col-md-4 mb-3">
                                                 <div class="card">
                                                     <img class="img-fluid" alt="100%x280"
-                                                        src=src="assets/img/kelas unggulan 2.jpeg" />
+                                                        src="assets/img/kelas unggulan 2.jpeg" />
                                                     <div class="card-body">
                                                         <h3><a href="course-details.php">Cara berpresentasi dengan
                                                                 menggugah dan efektif</a>
@@ -763,65 +763,7 @@ if (isset($_POST['logout']))
                                             <div class="col-md-4 mb-3">
                                                 <div class="card">
                                                     <img class="img-fluid" alt="100%x280"
-                                                        src=src="assets/img/kelas unggulan 2.jpeg" />
-                                                    <div class="card-body">
-                                                        <h3><a href="course-details.php">Cara berpresentasi dengan
-                                                                menggugah dan efektif</a>
-                                                        </h3>
-                                                        <p class="card-text">Skill presentasi punya peranan penting di
-                                                            dunia kerja. Ayo kuasai teknik
-                                                            presentasi
-                                                            mulai dari persiapan, metode online maupun offline, hingga
-                                                            praktek presentasi
-                                                            langsung dari Teuku Daffa, seorang certified public
-                                                            speaker!.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="row" style="background-color:white">
-                                            <div class="col-md-4 mb-3">
-                                                <div class="card">
-                                                    <img class="img-fluid" alt="100%x280"
-                                                        src=src="assets/img/kelas unggulan 2.jpeg" />
-                                                    <div class="card-body">
-                                                        <h3><a href="course-details.php">Cara berpresentasi dengan
-                                                                menggugah dan efektif</a>
-                                                        </h3>
-                                                        <p class="card-text">Skill presentasi punya peranan penting di
-                                                            dunia kerja. Ayo kuasai teknik
-                                                            presentasi
-                                                            mulai dari persiapan, metode online maupun offline, hingga
-                                                            praktek presentasi
-                                                            langsung dari Teuku Daffa, seorang certified public
-                                                            speaker!.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 mb-3">
-                                                <div class="card">
-                                                    <img class="img-fluid" alt="100%x280"
-                                                        src=src="assets/img/kelas unggulan 2.jpeg" />
-                                                    <div class="card-body">
-                                                        <h3><a href="course-details.php">Cara berpresentasi dengan
-                                                                menggugah dan efektif</a>
-                                                        </h3>
-                                                        <p class="card-text">Skill presentasi punya peranan penting di
-                                                            dunia kerja. Ayo kuasai teknik
-                                                            presentasi
-                                                            mulai dari persiapan, metode online maupun offline, hingga
-                                                            praktek presentasi
-                                                            langsung dari Teuku Daffa, seorang certified public
-                                                            speaker!.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 mb-3">
-                                                <div class="card">
-                                                    <img class="img-fluid" alt="100%x280"
-                                                        src=src="assets/img/kelas unggulan 2.jpeg" />
+                                                        src="assets/img/kelas unggulan 2.jpeg" />
                                                     <div class="card-body">
                                                         <h3><a href="course-details.php">Cara berpresentasi dengan
                                                                 menggugah dan efektif</a>
@@ -843,7 +785,7 @@ if (isset($_POST['logout']))
                                             <div class="col-md-4 mb-3">
                                                 <div class="card">
                                                     <img class="img-fluid" alt="100%x280"
-                                                        src=src="assets/img/kelas unggulan 2.jpeg" />
+                                                        src="assets/img/kelas unggulan 2.jpeg" />
                                                     <div class="card-body">
                                                         <h3><a href="course-details.php">Cara berpresentasi dengan
                                                                 menggugah dan efektif</a>
@@ -861,7 +803,7 @@ if (isset($_POST['logout']))
                                             <div class="col-md-4 mb-3">
                                                 <div class="card">
                                                     <img class="img-fluid" alt="100%x280"
-                                                        src=src="assets/img/kelas unggulan 2.jpeg" />
+                                                        src="assets/img/kelas unggulan 2.jpeg" />
                                                     <div class="card-body">
                                                         <h3><a href="course-details.php">Cara berpresentasi dengan
                                                                 menggugah dan efektif</a>
@@ -879,7 +821,65 @@ if (isset($_POST['logout']))
                                             <div class="col-md-4 mb-3">
                                                 <div class="card">
                                                     <img class="img-fluid" alt="100%x280"
-                                                        src=src="assets/img/kelas unggulan 2.jpeg" />
+                                                        src="assets/img/kelas unggulan 2.jpeg" />
+                                                    <div class="card-body">
+                                                        <h3><a href="course-details.php">Cara berpresentasi dengan
+                                                                menggugah dan efektif</a>
+                                                        </h3>
+                                                        <p class="card-text">Skill presentasi punya peranan penting di
+                                                            dunia kerja. Ayo kuasai teknik
+                                                            presentasi
+                                                            mulai dari persiapan, metode online maupun offline, hingga
+                                                            praktek presentasi
+                                                            langsung dari Teuku Daffa, seorang certified public
+                                                            speaker!.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row" style="background-color:white">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card">
+                                                    <img class="img-fluid" alt="100%x280"
+                                                        src="assets/img/kelas unggulan 2.jpeg" />
+                                                    <div class="card-body">
+                                                        <h3><a href="course-details.php">Cara berpresentasi dengan
+                                                                menggugah dan efektif</a>
+                                                        </h3>
+                                                        <p class="card-text">Skill presentasi punya peranan penting di
+                                                            dunia kerja. Ayo kuasai teknik
+                                                            presentasi
+                                                            mulai dari persiapan, metode online maupun offline, hingga
+                                                            praktek presentasi
+                                                            langsung dari Teuku Daffa, seorang certified public
+                                                            speaker!.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card">
+                                                    <img class="img-fluid" alt="100%x280"
+                                                        src="assets/img/kelas unggulan 2.jpeg" />
+                                                    <div class="card-body">
+                                                        <h3><a href="course-details.php">Cara berpresentasi dengan
+                                                                menggugah dan efektif</a>
+                                                        </h3>
+                                                        <p class="card-text">Skill presentasi punya peranan penting di
+                                                            dunia kerja. Ayo kuasai teknik
+                                                            presentasi
+                                                            mulai dari persiapan, metode online maupun offline, hingga
+                                                            praktek presentasi
+                                                            langsung dari Teuku Daffa, seorang certified public
+                                                            speaker!.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <div class="card">
+                                                    <img class="img-fluid" alt="100%x280"
+                                                        src="assets/img/kelas unggulan 2.jpeg" />
                                                     <div class="card-body">
                                                         <h3><a href="course-details.php">Cara berpresentasi dengan
                                                                 menggugah dan efektif</a>
