@@ -111,6 +111,17 @@ $state2 = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user_class WHERE
 
     <!-- Isi Materi disini -->
     <main id="main">Lorem Ipsum</main>
+    <h1 id="main">What is Word?</h1>
+    <img src = "assets/img/Word01.jpg" id="main">
+    <h2>Overview</h2>
+    <p>With Word on your PC, Mac, or mobile device, you can:</p>
+    <ul>
+      <li> Create and format your document with Themes.</li>
+      <li>Review work with Track Changes.</li>
+      <li>Polish your words with proofing tools like Editor.</li>
+      <li>Save to OneDrive, to get your documents from your computer, tablet, or phone.</li>
+      <li>Share your work to chat, comment, and collaborate with others, wherever they are.</li>
+    </ul>
     <!-- End Isi Materi -->
     <!-- ======= Footer ======= -->
     <footer id="footer">

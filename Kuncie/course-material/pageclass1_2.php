@@ -109,6 +109,22 @@ $state2 = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user_class WHERE
 
     <!-- Isi Materi disini -->
     <main id="main">Lorem Ipsum</main>
+    <h1>Add and edit text</h1>
+    <p>Follow these steps to add, replace</p>
+    <p><b>Add text<b></p>
+    <ol>
+      <li>Place the cursor where you want to add the text.</li>
+      <li>Start typing.</li>
+    </ol>
+    <p><b>Replace text<b></p>
+    <ol>
+      <li>Select the text you want to replace.</li>
+      <ul>
+        <li>To select a single word, double-click it.</li>
+        <li>To select a line, click to the left of it.</li>
+      </ul>
+      <li>Start typing.<li>
+    </ol>
     <!-- End Isi Materi -->
     <!-- ======= Footer ======= -->
     <footer id="footer">
