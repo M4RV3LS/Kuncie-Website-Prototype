@@ -135,7 +135,12 @@ $state2 = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user_class WHERE
     <main id="main">Lorem Ipsum</main>
     <h1>Insert a table</h1>
     <p>For a basic table, click Insert > Table and move the cursor over the grid until you highlight the number of columns and rows you want.</p>
+    <br>
+    <img src = "../assets/img/pageclass_1_4_1.jpg">
+    <br><br>
     <p>For a larger table, or to customize a table, select Insert > Table > Insert Table.</p>
+    <br>
+    <img src = "../assets/img/pageclass_1_4_2.jpg">
 
     <!-- End Isi Materi -->
     <!-- ======= Footer ======= -->
