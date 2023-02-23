@@ -4,9 +4,11 @@ require '../../function.php';
 $email = $_SESSION['email'];
 $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = '$email'"));
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
@@ -47,7 +49,7 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
   </head>
 
   <body>
-    <form action ="" method = "POST">
+  <form action = "" method = "post">
     <!-- ======= Header ======= -->
     <header id="header" class="site-header fixed-top sps header-dark sps--abv">
         <div class="container-fluid d-flex align-items-center">
@@ -66,7 +68,7 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
                 <nav id="navbar" class="navbar order-last order-lg-0">
                     <ul>
                         <li>
-                <a id="beranda" class="active" href="index - login.php"><i class="bi bi-house-fill" style="font-size: 1em; padding: 5px"></i> Beranda</a>
+                <a id="beranda" class="active" href="index-login.php"><i class="bi bi-house-fill" style="font-size: 1em; padding: 5px"></i> Beranda</a>
               </li>
 
               <!-- Mulai Kategori -->
@@ -389,9 +391,9 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
                             <a href="#" id="welcome">Hi , <?php echo $row['username']?>!</a>
                         </li>
 
-                        <li style="visibility: hidden">
+                        <!-- <li style="visibility: hidden">
                             <a href="events.php">Webinar</a>
-                        </li>
+                        </li> -->
                     </ul>
 
                     <i class="bi bi-list mobile-nav-toggle"></i>
@@ -402,12 +404,13 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
         </div>
     </header>
     <!-- End Header -->
-    <main id="main" data-aos="fade-in" style="margin-top: 100px">
+
+    <main id="main" data-aos="fade-in">
       <!-- ======= Breadcrumbs ======= -->
       <div class="breadcrumbs">
         <div class="container">
-          <h2>Kuncie Store</h2>
-          <p>Menjual berbagai produk unggulan yang diciptakan langsung oleh siswa - siswi kuncie , tunggu apa lagi langsung saja explore produk-produk kami !</p>
+          <h2>Courses</h2>
+          <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium.</p>
         </div>
       </div>
       <!-- End Breadcrumbs -->
@@ -415,8 +418,8 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
       <!-- ======= Courses Section ======= -->
       <!-- ======= Works Section ======= -->
       <div class="main-container">
-        <h2>Product Categories</h2>
-
+        <h2>News Categories</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, velit.</p>
         <div class="filter-container">
           <div class="category-head">
             <ul>
@@ -425,24 +428,24 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
                 <span><i class="fas fa-border-all"></i></span>
               </div>
               <div class="category-title" id="culture">
-                <li>Fotografi</li>
-                <span><i class="bi bi-camera-fill"></i></span>
-              </div>
-              <div class="category-title" id="finance">
-                <li>Microsoft Office</li>
-                <span><i class="bi bi-microsoft"></i></span>
-              </div>
-              <div class="category-title" id="business">
-                <li>Aplikasi</li>
-                <span><i class="bi bi-android2"></i></span>
-              </div>
-              <div class="category-title" id="sports">
-                <li>Copywriting</li>
-                <span><i class="bi bi-pencil-fill"></i></span>
+                <li>Culture</li>
+                <span><i class="fas fa-theater-masks"></i></span>
               </div>
               <div class="category-title" id="politics">
-                <li>Graphic Design</li>
-                <span><i class="bi bi-shop-window"></i></span>
+                <li>Politics</li>
+                <span><i class="fas fa-landmark"></i></span>
+              </div>
+              <div class="category-title" id="finance">
+                <li>Finance</li>
+                <span><i class="fas fa-chart-area"></i></span>
+              </div>
+              <div class="category-title" id="business">
+                <li>Business</li>
+                <span><i class="fas fa-coins"></i></span>
+              </div>
+              <div class="category-title" id="sports">
+                <li>Sports</li>
+                <span><i class="fas fa-running"></i></span>
               </div>
             </ul>
           </div>
@@ -452,433 +455,337 @@ $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE email = 
               <!-- single post -->
               <div class="all business">
                 <div class="post-img">
-                  <img src="assets/img/aplikasi.png" alt="post" />
-                  <span class="category-name">Aplikasi</span>
+                  <img src="assets/img/course-1.jpg" alt="post" />
+                  <span class="category-name">business</span>
                 </div>
 
                 <div class="post-content">
                   <div class="post-content-top">
-                    <span>Rp.100.000</span>
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
                   </div>
-                  <h2>Youtube Ads Blocker</h2>
+                  <h2>Lorem ipsum dolor sit amet</h2>
                   <p>
-                    File-size : 4 mb
-                    <br />
-                    File type: exe , flv , glf<br />
-                    author : Priscilla
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
                   </p>
                 </div>
-                <button type="button" class="read-btn">Beli Sekarang</button>
-                <div class="d-flex justify-content-center">
-                  <a href="#"><i class="bi bi-linkedin" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-instagram" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-facebook" style="font-size: 20px; margin: 10px 15px"></i></a>
-                </div>
+                <button type="button" class="read-btn">Read All</button>
               </div>
               <!-- end of single post -->
               <!-- single post -->
               <div class="all business">
                 <div class="post-img">
-                  <img src="assets/img/aplikasi.png" alt="post" />
-                  <span class="category-name">Aplikasi</span>
+                  <img src="assets/img/course-2.jpg" alt="post" />
+                  <span class="category-name">business</span>
                 </div>
 
                 <div class="post-content">
                   <div class="post-content-top">
-                    <span>Rp.100.000</span>
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
                   </div>
-                  <h2>Youtube Ads Blocker</h2>
+                  <h2>Lorem ipsum dolor sit amet</h2>
                   <p>
-                    File-size : 4 mb
-                    <br />
-                    File type: exe , flv , glf<br />
-                    author : Priscilla
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
                   </p>
                 </div>
-                <button type="button" class="read-btn">Beli Sekarang</button>
-                <div class="d-flex justify-content-center">
-                  <a href="#"><i class="bi bi-linkedin" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-instagram" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-facebook" style="font-size: 20px; margin: 10px 15px"></i></a>
-                </div>
+                <button type="button" class="read-btn">Read All</button>
               </div>
               <!-- end of single post -->
               <!-- single post -->
               <div class="all business">
                 <div class="post-img">
-                  <img src="assets/img/aplikasi.png" alt="post" />
-                  <span class="category-name">Aplikasi</span>
+                  <img src="assets/img/course-3.jpg" alt="post" />
+                  <span class="category-name">business</span>
                 </div>
 
                 <div class="post-content">
                   <div class="post-content-top">
-                    <span>Rp.100.000</span>
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
                   </div>
-                  <h2>Youtube Ads Blocker</h2>
+                  <h2>Lorem ipsum dolor sit amet</h2>
                   <p>
-                    File-size : 4 mb
-                    <br />
-                    File type: exe , flv , glf<br />
-                    author : Priscilla
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
                   </p>
                 </div>
-                <button type="button" class="read-btn">Beli Sekarang</button>
-                <div class="d-flex justify-content-center">
-                  <a href="#"><i class="bi bi-linkedin" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-instagram" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-facebook" style="font-size: 20px; margin: 10px 15px"></i></a>
-                </div>
+                <button type="button" class="read-btn">Read All</button>
               </div>
               <!-- end of single post -->
               <!-- single post -->
               <div class="all culture">
                 <div class="post-img">
-                  <img src="assets/img/shutterstock-1.jpeg" alt="post" />
-                  <span class="category-name">Fotografi</span>
+                  <img src="assets/img/course-1.jpg" alt="post" />
+                  <span class="category-name">culture</span>
                 </div>
 
                 <div class="post-content">
                   <div class="post-content-top">
-                    <span>Rp.15.000</span>
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
                   </div>
-                  <h2>Nature Photo</h2>
+                  <h2>Lorem ipsum dolor sit amet</h2>
                   <p>
-                    File-size : 400 kb
-                    <br />
-                    File type:JPG<br />
-                    Author : Marvel Subekti
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
                   </p>
                 </div>
-                <button type="button" class="read-btn">Beli Sekarang</button>
-                <div class="d-flex justify-content-center">
-                  <a href="#"><i class="bi bi-linkedin" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-instagram" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-facebook" style="font-size: 20px; margin: 10px 15px"></i></a>
-                </div>
+                <button type="button" class="read-btn">Read All</button>
               </div>
               <!-- end of single post -->
               <!-- single post -->
               <div class="all culture">
                 <div class="post-img">
-                  <img src="assets/img/fotografi-2.jpeg" alt="post" />
-                  <span class="category-name">Fotografi</span>
+                  <img src="assets/img/course-2.jpg" alt="post" />
+                  <span class="category-name">culture</span>
                 </div>
 
                 <div class="post-content">
                   <div class="post-content-top">
-                    <span>Rp.20.000</span>
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
                   </div>
-                  <h2>Nature Photo</h2>
+                  <h2>Lorem ipsum dolor sit amet</h2>
                   <p>
-                    File-size : 400 kb
-                    <br />
-                    File type: JPG<br />
-                    Author : Marvel Subekti
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
                   </p>
                 </div>
-                <button type="button" class="read-btn">Beli Sekarang</button>
-                <div class="d-flex justify-content-center">
-                  <a href="#"><i class="bi bi-linkedin" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-instagram" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-facebook" style="font-size: 20px; margin: 10px 15px"></i></a>
-                </div>
+                <button type="button" class="read-btn">Read All</button>
               </div>
               <!-- end of single post -->
               <!-- single post -->
               <div class="all culture">
                 <div class="post-img">
-                  <img src="assets/img/fotografi-3.jpeg" alt="post" />
-                  <span class="category-name">Fotografi</span>
+                  <img src="assets/img/course-3.jpg" alt="post" />
+                  <span class="category-name">culture</span>
                 </div>
 
                 <div class="post-content">
                   <div class="post-content-top">
-                    <span>Rp.10.000</span>
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
                   </div>
-                  <h2>Nature Photo</h2>
+                  <h2>Lorem ipsum dolor sit amet</h2>
                   <p>
-                    File-size : 400 kb
-                    <br />
-                    File type: JPG<br />
-                    Author : Marvel Subekti
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
                   </p>
                 </div>
-                <button type="button" class="read-btn">Beli Sekarang</button>
-                <div class="d-flex justify-content-center">
-                  <a href="#"><i class="bi bi-linkedin" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-instagram" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-facebook" style="font-size: 20px; margin: 10px 15px"></i></a>
-                </div>
+                <button type="button" class="read-btn">Read All</button>
               </div>
               <!-- end of single post -->
               <!-- single post -->
               <div class="all culture">
                 <div class="post-img">
-                  <img src="assets/img/fotografi-4.jpeg" alt="post" />
-                  <span class="category-name">Fotografi</span>
+                  <img src="assets/img/course-1.jpg" alt="post" />
+                  <span class="category-name">culture</span>
                 </div>
 
                 <div class="post-content">
                   <div class="post-content-top">
-                    <span>Rp.15.000</span>
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
                   </div>
-                  <h2>Nature Photo</h2>
+                  <h2>Lorem ipsum dolor sit amet</h2>
                   <p>
-                    File-size : 400 kb
-                    <br />
-                    File type: JPG<br />
-                    Author : Marvel Subekti
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
                   </p>
                 </div>
-                <button type="button" class="read-btn">Beli Sekarang</button>
-                <div class="d-flex justify-content-center">
-                  <a href="#"><i class="bi bi-linkedin" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-instagram" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-facebook" style="font-size: 20px; margin: 10px 15px"></i></a>
-                </div>
+                <button type="button" class="read-btn">Read All</button>
               </div>
               <!-- end of single post -->
               <!-- single post -->
               <div class="all finance">
                 <div class="post-img">
-                  <img src="assets/img/microsoft-3.jpeg" alt="post" />
-                  <span class="category-name">Microsoft Office</span>
+                  <img src="assets/img/course-2.jpg" alt="post" />
+                  <span class="category-name">finance</span>
                 </div>
 
                 <div class="post-content">
                   <div class="post-content-top">
-                    <span>Rp.30.000</span>
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
                   </div>
-                  <h2>Tech Presentation templates</h2>
+                  <h2>Lorem ipsum dolor sit amet</h2>
                   <p>
-                    File-size : 8 mb
-                    <br />
-                    File type: PPT <br />
-                    Author : Erensi
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
                   </p>
                 </div>
-                <button type="button" class="read-btn">Beli Sekarang</button>
-                <div class="d-flex justify-content-center">
-                  <a href="#"><i class="bi bi-linkedin" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-instagram" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-facebook" style="font-size: 20px; margin: 10px 15px"></i></a>
-                </div>
+                <button type="button" class="read-btn">Read All</button>
               </div>
               <!-- end of single post -->
               <!-- single post -->
               <div class="all finance">
                 <div class="post-img">
-                  <img src="assets/img/microsoft-2.jpeg" alt="post" />
-                  <span class="category-name">Microsoft Office</span>
+                  <img src="assets/img/course-3.jpg" alt="post" />
+                  <span class="category-name">finance</span>
                 </div>
 
                 <div class="post-content">
                   <div class="post-content-top">
-                    <span>Rp.10.000</span>
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
                   </div>
-                  <h2>School Presentation templates</h2>
+                  <h2>Lorem ipsum dolor sit amet</h2>
                   <p>
-                    File-size : 3.7 mb
-                    <br />
-                    File type: PPT <br />
-                    Author : Erensi
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
                   </p>
                 </div>
-                <button type="button" class="read-btn">Beli Sekarang</button>
-                <div class="d-flex justify-content-center">
-                  <a href="#"><i class="bi bi-linkedin" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-instagram" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-facebook" style="font-size: 20px; margin: 10px 15px"></i></a>
-                </div>
+                <button type="button" class="read-btn">Read All</button>
               </div>
               <!-- end of single post -->
               <!-- single post -->
               <div class="all finance">
                 <div class="post-img">
-                  <img src="assets/img/microsoft-1.png" alt="post" />
-                  <span class="category-name">Microsoft Office</span>
+                  <img src="assets/img/course-2.jpg" alt="post" />
+                  <span class="category-name">finance</span>
                 </div>
 
                 <div class="post-content">
                   <div class="post-content-top">
-                    <span>Rp.12.000</span>
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
                   </div>
-                  <h2>Black History Month Presentation templates</h2>
+                  <h2>Lorem ipsum dolor sit amet</h2>
                   <p>
-                    File-size : 3.7 mb
-                    <br />
-                    File type: PPT <br />
-                    Author : Erensi
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
                   </p>
                 </div>
-                <button type="button" class="read-btn">Beli Sekarang</button>
-                <div class="d-flex justify-content-center">
-                  <a href="#"><i class="bi bi-linkedin" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-instagram" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-facebook" style="font-size: 20px; margin: 10px 15px"></i></a>
-                </div>
+                <button type="button" class="read-btn">Read All</button>
               </div>
               <!-- end of single post -->
               <!-- single post -->
               <div class="all politics">
                 <div class="post-img">
-                  <img src="assets/img/shutterstock-2.jpeg" alt="post" />
-                  <span class="category-name">Graphic Design</span>
+                  <img src="assets/img/course-1.jpg" alt="post" />
+                  <span class="category-name">politics</span>
                 </div>
 
                 <div class="post-content">
                   <div class="post-content-top">
-                    <span>Rp.40.000</span>
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
                   </div>
-                  <h2>Illustration Vector</h2>
+                  <h2>Lorem ipsum dolor sit amet</h2>
                   <p>
-                    File-size : 6.4 mb
-                    <br />
-                    File type: Ai , png , jpg <br />
-                    Author : wildan
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
                   </p>
                 </div>
-                <button type="button" class="read-btn">Beli Sekarang</button>
-                <div class="d-flex justify-content-center">
-                  <a href="#"><i class="bi bi-linkedin" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-instagram" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-facebook" style="font-size: 20px; margin: 10px 15px"></i></a>
-                </div>
+                <button type="button" class="read-btn">Read All</button>
               </div>
               <!-- end of single post -->
               <!-- single post -->
               <div class="all politics">
                 <div class="post-img">
-                  <img src="assets/img/shutterstock-3.jpeg" alt="post" />
-                  <span class="category-name">Graphic Design</span>
+                  <img src="assets/img/course-2.jpg" alt="post" />
+                  <span class="category-name">politics</span>
                 </div>
 
                 <div class="post-content">
                   <div class="post-content-top">
-                    <span>Rp.30.000</span>
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
                   </div>
-                  <h2>Illustration Vector</h2>
+                  <h2>Lorem ipsum dolor sit amet</h2>
                   <p>
-                    File-size : 6.4 mb
-                    <br />
-                    File type: Ai , png , jpg <br />
-                    Author : wildan
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
                   </p>
                 </div>
-                <button type="button" class="read-btn">Beli Sekarang</button>
-                <div class="d-flex justify-content-center">
-                  <a href="#"><i class="bi bi-linkedin" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-instagram" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-facebook" style="font-size: 20px; margin: 10px 15px"></i></a>
-                </div>
+                <button type="button" class="read-btn">Read All</button>
               </div>
               <!-- end of single post -->
               <!-- single post -->
               <div class="all politics">
                 <div class="post-img">
-                  <img src="assets/img/shutterstock-4.jpeg" alt="post" />
-                  <span class="category-name">Graphic Design</span>
+                  <img src="assets/img/course-3.jpg" alt="post" />
+                  <span class="category-name">politics</span>
                 </div>
 
                 <div class="post-content">
                   <div class="post-content-top">
-                    <span>Rp.36.000</span>
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
                   </div>
-                  <h2>Illustration Vector</h2>
+                  <h2>Lorem ipsum dolor sit amet</h2>
                   <p>
-                    File-size : 7 mb
-                    <br />
-                    File type: Ai , png , jpg <br />
-                    Author : wildan
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
                   </p>
                 </div>
-                <button type="button" class="read-btn">Beli Sekarang</button>
-                <div class="d-flex justify-content-center">
-                  <a href="#"><i class="bi bi-linkedin" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-instagram" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-facebook" style="font-size: 20px; margin: 10px 15px"></i></a>
-                </div>
+                <button type="button" class="read-btn">Read All</button>
               </div>
               <!-- end of single post -->
               <!-- single post -->
               <div class="all politics">
                 <div class="post-img">
-                  <img src="assets/img/shutterstock-5.jpeg" alt="post" />
-                  <span class="category-name">Graphic Design</span>
+                  <img src="assets/img/course-1.jpg" alt="post" />
+                  <span class="category-name">politics</span>
                 </div>
 
                 <div class="post-content">
                   <div class="post-content-top">
-                    <span>Rp.20.000</span>
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
                   </div>
-                  <h2>Illustration Vector</h2>
+                  <h2>Lorem ipsum dolor sit amet</h2>
                   <p>
-                    File-size : 4.4 mb
-                    <br />
-                    File type: Ai , png , jpg <br />
-                    Author : wildan
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
                   </p>
                 </div>
-                <button type="button" class="read-btn">Beli Sekarang</button>
-                <div class="d-flex justify-content-center">
-                  <a href="#"><i class="bi bi-linkedin" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-instagram" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-facebook" style="font-size: 20px; margin: 10px 15px"></i></a>
-                </div>
+                <button type="button" class="read-btn">Read All</button>
               </div>
               <!-- end of single post -->
               <!-- single post -->
               <div class="all sports">
                 <div class="post-img">
-                  <img src="assets/img/copywriting-2.jpeg" alt="post" />
-                  <span class="category-name">Copywriting</span>
+                  <img src="assets/img/course-3.jpg" alt="post" />
+                  <span class="category-name">sports</span>
                 </div>
 
                 <div class="post-content">
                   <div class="post-content-top">
-                    <span>Rp.17.500</span>
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
                   </div>
-                  <h2>Copywriting Template For Bussiness</h2>
+                  <h2>Lorem ipsum dolor sit amet</h2>
                   <p>
-                    File-size : 4 mb
-                    <br />
-                    File type: txt , docx <br />
-                    Author : clara
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
                   </p>
                 </div>
-                <button type="button" class="read-btn">Beli Sekarang</button>
-                <div class="d-flex justify-content-center">
-                  <a href="#"><i class="bi bi-linkedin" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-instagram" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-facebook" style="font-size: 20px; margin: 10px 15px"></i></a>
-                </div>
+                <button type="button" class="read-btn">Read All</button>
               </div>
               <!-- end of single post -->
               <!-- single post -->
               <div class="all sports">
                 <div class="post-img">
-                  <img src="assets/img/copywriting-2.jpeg" alt="post" />
-                  <span class="category-name">Copywriting</span>
+                  <img src="assets/img/course-2.jpg" alt="post" />
+                  <span class="category-name">sports</span>
                 </div>
 
                 <div class="post-content">
                   <div class="post-content-top">
-                    <span>Rp.19.500</span>
+                    <span><i class="fas fa-calendar"></i>January 01, 2XXX</span>
+                    <span> <i class="fas fa-comment"></i>34 </span>
                   </div>
-                  <h2>Copywriting Template For Marketing</h2>
+                  <h2>Lorem ipsum dolor sit amet</h2>
                   <p>
-                    File-size : 10 mb
-                    <br />
-                    File type: txt , docx <br />
-                    Author : clara
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem,
+                    consectetur nesciunt!
                   </p>
                 </div>
-                <button type="button" class="read-btn">Beli Sekarang</button>
-                <div class="d-flex justify-content-center">
-                  <a href="#"><i class="bi bi-linkedin" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-instagram" style="font-size: 20px; margin: 10px 15px"></i></a>
-                  <a href="#"><i class="bi bi-facebook" style="font-size: 20px; margin: 10px 15px"></i></a>
-                </div>
+                <button type="button" class="read-btn">Read All</button>
               </div>
               <!-- end of single post -->
             </div>

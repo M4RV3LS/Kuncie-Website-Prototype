@@ -118,6 +118,15 @@ $state2 = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user_class WHERE
 
     <!-- Isi Materi disini -->
     <main id="main">Lorem Ipsum</main>
+    <h1>Add and format text</h1>
+    <h4>Format text</h4>
+    <ol>
+      <li>Select the text you want to format.<br>
+          To select a single word, double-click it. To select a line of text, click to the left of it.</li>
+        <br>
+      <li>Select an option to change the font, font size, font color, or make the text bold, italic, or underline.<br>
+          <br><img src = "../assets/img/pageclass1_3.jpg"></li>
+    </ol>
     <!-- End Isi Materi -->
     <!-- ======= Footer ======= -->
     <footer id="footer">
